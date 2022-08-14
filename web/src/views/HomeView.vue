@@ -57,14 +57,17 @@
 <script lang="ts">
 //import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons-vue';
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
+//import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import axios from "axios";
 export default defineComponent({
  name: 'HomeView',
   components: {
-    HelloWorld,
+    //HelloWorld,
 
- },
+ },setup(){
+   console.log("setup");
+   axios.get("")
+  }
 
 });
 </script>
