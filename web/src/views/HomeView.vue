@@ -124,7 +124,8 @@ setup(){//功能：通过axios调用电子书列表接口
              .then((response)=>{
                const data=response.data;
                ebook.value=data.content;
-               console.log(response);});
+              // console.log(response);
+             });
    }
    )
     return {
