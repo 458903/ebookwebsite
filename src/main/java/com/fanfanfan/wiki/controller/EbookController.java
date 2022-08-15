@@ -1,6 +1,7 @@
 package com.fanfanfan.wiki.controller;
 import com.fanfanfan.wiki.domain.Ebook;
 //import com.fanfanfan.wiki.rep.EbookQueryReq;
+import com.fanfanfan.wiki.rep.EbookQueryReq;
 import com.fanfanfan.wiki.rep.EbookSaveReq;
 import com.fanfanfan.wiki.resp.CommonResp;
 import com.fanfanfan.wiki.resp.EbookQueryResp;
@@ -20,10 +21,10 @@ public class EbookController {
     private EbookService ebookService;
     /*后端会有很多个接口，为了让前端统一处理逻辑（登录校验、权限校验），需要统一处理后端的返回值*/
     @GetMapping("/list")
-    public CommonResp list(){
+    public CommonResp list(EbookQueryReq rep){
 
-        CommonResp<List<Ebook>> resp = new CommonResp<>();
-        List<Ebook> list=ebookService.list();
+        CommonResp<List<EbookQueryResp>> resp = new CommonResp<>();
+        List<EbookQueryResp> list=ebookService.list(rep);
         resp.setContent(list);
         return resp;
 

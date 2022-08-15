@@ -7,6 +7,7 @@ import com.fanfanfan.wiki.domain.Ebook;
 import com.fanfanfan.wiki.domain.EbookExample;
 import com.fanfanfan.wiki.mapper.EbookMapper;
 //import com.fanfanfan.wiki.rep.EbookQueryReq;
+import com.fanfanfan.wiki.rep.EbookQueryReq;
 import com.fanfanfan.wiki.rep.EbookSaveReq;
 import com.fanfanfan.wiki.resp.EbookQueryResp;
 //import com.fanfanfan.wiki.resp.PageResp;
@@ -14,10 +15,12 @@ import com.fanfanfan.wiki.util.CopyUtil;
 //import com.fanfanfan.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -27,9 +30,22 @@ public class EbookService {
 
     @Resource
     private EbookMapper ebookMapper;
-    public  List<Ebook>  list() {
+    public  List<EbookQueryResp>  list(EbookQueryReq rep) {
+        EbookExample example = new EbookExample();
+        EbookExample.Criteria criteria = example.createCriteria();
+        criteria.andNameLike("%"+rep.getName()+"%");
 
-        return ebookMapper.selectByExample(null);
+
+        List<Ebook> ebookList = ebookMapper.selectByExample(example);
+        List<EbookQueryResp> respList =new ArrayList<>();
+        for (Ebook ebook : ebookList) {
+            EbookQueryResp ebookQueryResp = new EbookQueryResp();
+           // ebookQueryResp.setId(ebook.getId());
+            BeanUtils.copyProperties(ebook,ebookQueryResp);
+          //  ebookQueryResp.setId(40L);
+            respList.add(ebookQueryResp);
+        }
+        return respList;
     }}
 
    /* @Resource
