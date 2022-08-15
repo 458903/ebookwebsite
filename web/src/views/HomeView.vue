@@ -49,14 +49,16 @@
   <a-layout-content
           :style="{ background: '#D8BFD8', padding: '24px', margin: 0, minHeight: '280px' }"
   >
-    Contentdsggszg
+    <pre>{{ebook}}}</pre>
+
   </a-layout-content>
   </a-layout>
 </template>
 
 <script lang="ts">
 //import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons-vue';
-import { defineComponent } from 'vue';
+import { defineComponent ,onMounted,ref
+} from 'vue';
 //import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import axios from "axios";
 export default defineComponent({
@@ -65,11 +67,21 @@ export default defineComponent({
   setup(){//功能：通过axios调用电子书列表接口
    //setup方法:vue3新增初始化方法
    console.log("setup");
-   axios.get("http://localhost:8097/ebook/list?name=vue")
- .then((response)=>{
-   console.log(response);
+   const ebook=ref();
 
- })
+    onMounted( ()=> {//初始化的逻辑都写到生命周期函数onmOUTED里面，
+ // setup就只用放一些参数定义、方法定义，尽量把初始化方法写到生命周期函数里面，免得界面渲染的时候报错
+     console.log("onMounted");
+    //如果不加上面这行代码，就会报错“ Cannot read properties of null (reading 'parentNode')”
+     axios.get("http://localhost:8097/ebook/list?name=vue")
+             .then((response)=>{
+               const data=response.data;
+               ebook.value=data.content;
+               console.log(response);});
+   })
+    return {
+      ebook
+    }
  }
 
 });
