@@ -1,151 +1,37 @@
-2022-08-14 20:28:38.790 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12924 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
-2022-08-14 20:28:38.790 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-08-14 20:28:38.870 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-08-14 20:28:38.870 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-08-14 20:28:39.660 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.fanfanfan.wiki.config]' package. Please check your configuration.
-2022-08-14 20:28:40.250 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
-2022-08-14 20:28:40.260 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:28:40.260 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-08-14 20:28:40.260 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-14 20:28:40.360 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-08-14 20:28:40.370 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1500 ms
-2022-08-14 20:28:40.430 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-08-14 20:28:40.430 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-08-14 20:28:40.450 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-14 20:28:40.500 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' in your configuration.
-
-2022-08-14 20:30:33.364 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 2612 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
-2022-08-14 20:30:33.367 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-08-14 20:30:33.426 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-08-14 20:30:33.427 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-08-14 20:30:34.237 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.fanfanfan.wiki.config]' package. Please check your configuration.
-2022-08-14 20:30:34.731 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
-2022-08-14 20:30:34.739 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:30:34.740 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-08-14 20:30:34.741 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-14 20:30:34.829 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-08-14 20:30:34.830 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1399 ms
-2022-08-14 20:30:34.885 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-08-14 20:30:34.888 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-08-14 20:30:34.904 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-14 20:30:34.946 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' in your configuration.
-
-2022-08-14 20:31:33.547 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 15812 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
-2022-08-14 20:31:33.557 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-08-14 20:31:33.630 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-08-14 20:31:33.630 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-08-14 20:31:34.380 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.fanfanfan.wiki.config]' package. Please check your configuration.
-2022-08-14 20:31:34.902 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
-2022-08-14 20:31:34.912 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:31:34.912 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-08-14 20:31:34.912 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-14 20:31:35.001 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-08-14 20:31:35.001 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1371 ms
-2022-08-14 20:31:35.051 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-08-14 20:31:35.051 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-08-14 20:31:35.071 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-14 20:31:35.111 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' in your configuration.
-
-2022-08-14 20:32:51.927 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 16288 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
-2022-08-14 20:32:51.937 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-08-14 20:32:52.007 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-08-14 20:32:52.007 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-08-14 20:32:52.767 WARN  org.mybatis.spring.mapper.ClassPathMapperScanner  :44   [32m                  [0;39m No MyBatis mapper was found in '[com.fanfanfan.wiki.config]' package. Please check your configuration.
-2022-08-14 20:32:53.257 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
-2022-08-14 20:32:53.267 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:32:53.267 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-08-14 20:32:53.267 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-14 20:32:53.357 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-08-14 20:32:53.357 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1350 ms
-2022-08-14 20:32:53.407 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'demoService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-08-14 20:32:53.407 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-08-14 20:32:53.427 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-14 20:32:53.467 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.fanfanfan.wiki.mapper.DemoMapper' in your configuration.
-
-2022-08-14 20:35:06.178 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 15912 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
-2022-08-14 20:35:06.178 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-08-14 20:35:06.267 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-08-14 20:35:06.267 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-08-14 20:35:07.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
-2022-08-14 20:35:07.574 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:35:07.574 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-08-14 20:35:07.574 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
-2022-08-14 20:35:07.669 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-08-14 20:35:07.669 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1402 ms
-2022-08-14 20:35:08.429 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-08-14 20:35:08.449 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
-2022-08-14 20:35:08.475 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
-2022-08-14 20:35:08.489 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 2.983 seconds (JVM running for 5.253)
-2022-08-14 20:35:08.493 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
-2022-08-14 20:35:08.493 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
-2022-08-14 20:35:28.590 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-14 20:35:28.590 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-08-14 20:35:28.600 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 10 ms
-2022-08-14 20:35:28.649 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-08-14 20:35:30.073 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-08-14 20:35:30.083 DEBUG c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, `name` from demo
-2022-08-14 20:35:30.113 DEBUG c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
-2022-08-14 20:35:30.133 TRACE c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, name
-2022-08-14 20:35:30.133 TRACE c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, esgs
-2022-08-14 20:35:30.133 TRACE c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:143  [32m                  [0;39m <==        Row: 2, 33532f
-2022-08-14 20:35:30.133 DEBUG c.fanfanfan.wiki.mapper.DemoMapper.selectByExample:137  [32m                  [0;39m <==      Total: 2
+2022-08-15 10:41:31.394 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 10556 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 10:41:31.394 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 10:41:31.484 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-15 10:41:31.484 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-15 10:41:33.124 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 10:41:33.134 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 10:41:33.134 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 10:41:33.134 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 10:41:33.254 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 10:41:33.254 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1770 ms
+2022-08-15 10:41:34.324 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 10:41:34.344 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 10:41:34.374 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 10:41:34.394 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 3.699 seconds (JVM running for 6.277)
+2022-08-15 10:41:34.394 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 10:41:34.394 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 10:41:51.312 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-15 10:41:51.322 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-08-15 10:41:51.322 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-08-15 10:41:51.392 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-08-15 10:41:53.106 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-08-15 10:41:53.116 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 10:41:53.156 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 10:41:53.196 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 10:41:53.196 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 10:41:53.196 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 10:41:53.196 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 10:41:53.196 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 10:41:53.196 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 10:42:25.531 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 10:42:25.533 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 10:42:25.536 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 10:42:25.537 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 10:42:25.538 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 10:42:25.541 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 10:42:25.542 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 10:42:25.543 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
