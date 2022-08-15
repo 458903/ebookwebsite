@@ -118,9 +118,9 @@ setup(){//功能：通过axios调用电子书列表接口
   ];
    onMounted( ()=> {//初始化的逻辑都写到生命周期函数onmOUTED里面，
  // setup就只用放一些参数定义、方法定义，尽量把初始化方法写到生命周期函数里面，免得界面渲染的时候报错
-     console.log("onMounted");
+     console.log("onMounted3443");
     //如果不加上面这行代码，就会报错“ Cannot read properties of null (reading 'parentNode')”
-     axios.get(process.env.VUE_APP_SERVER+"/ebook/list")
+     axios.get("/ebook/list")
              .then((response)=>{
                const data=response.data;
                ebook.value=data.content;
