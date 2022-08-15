@@ -2562,3 +2562,104 @@ Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.EbookSer
 2022-08-15 22:38:34.098 INFO  com.fanfanfan.wiki.filter.LogFilter               :27   [32m                  [0;39m 请求地址: http://localhost:8097/hello GET
 2022-08-15 22:38:34.099 INFO  com.fanfanfan.wiki.filter.LogFilter               :28   [32m                  [0;39m 远程地址: 127.0.0.1
 2022-08-15 22:38:34.147 INFO  com.fanfanfan.wiki.filter.LogFilter               :32   [32m                  [0;39m ------------- LogFilter 结束 耗时：48 ms -------------
+2022-08-15 22:44:16.414 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 13976 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 22:44:16.415 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 22:44:16.767 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 22:44:16.768 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:44:16.768 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 22:44:16.768 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 22:44:16.801 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 22:44:16.802 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 383 ms
+2022-08-15 22:44:17.100 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 22:44:17.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:44:17.119 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 22:44:17.125 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.771 seconds (JVM running for 407.104)
+2022-08-15 22:44:17.128 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 22:44:17.129 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 22:44:17.130 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 22:49:18.299 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 13976 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 22:49:18.300 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 22:49:18.644 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 22:49:18.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:18.645 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 22:49:18.646 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 22:49:18.696 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 22:49:18.696 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 394 ms
+2022-08-15 22:49:18.947 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 22:49:18.957 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:18.961 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 22:49:18.966 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.703 seconds (JVM running for 708.944)
+2022-08-15 22:49:18.968 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 22:49:18.969 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 22:49:18.969 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 22:49:28.144 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 13976 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 22:49:28.145 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 22:49:28.436 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 22:49:28.436 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:28.437 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 22:49:28.437 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 22:49:28.463 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 22:49:28.464 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 315 ms
+2022-08-15 22:49:28.729 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 22:49:28.744 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:28.750 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 22:49:28.760 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.667 seconds (JVM running for 718.738)
+2022-08-15 22:49:28.763 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 22:49:28.764 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 22:49:28.764 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 22:49:38.841 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 13976 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 22:49:38.842 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 22:49:39.160 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 22:49:39.161 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:39.162 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 22:49:39.162 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 22:49:39.186 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 22:49:39.187 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 342 ms
+2022-08-15 22:49:39.380 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 22:49:39.393 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:49:39.397 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 22:49:39.406 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.605 seconds (JVM running for 729.385)
+2022-08-15 22:49:39.409 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 22:49:39.409 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 22:49:39.410 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 22:50:08.209 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 17496 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 22:50:08.212 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 22:50:08.295 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-15 22:50:08.296 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-15 22:50:09.914 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 22:50:09.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:50:09.926 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 22:50:09.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 22:50:10.033 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 22:50:10.033 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1736 ms
+2022-08-15 22:50:10.856 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 22:50:10.883 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 22:50:10.911 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 22:50:10.923 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 3.346 seconds (JVM running for 5.917)
+2022-08-15 22:50:10.928 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 22:50:10.929 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 22:50:23.464 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-15 22:50:23.465 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-08-15 22:50:23.468 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 3 ms
+2022-08-15 22:50:23.477 INFO  com.fanfanfan.wiki.filter.LogFilter               :26   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-08-15 22:50:23.478 INFO  com.fanfanfan.wiki.filter.LogFilter               :27   [32m                  [0;39m 请求地址: http://localhost:8097/hello GET
+2022-08-15 22:50:23.478 INFO  com.fanfanfan.wiki.filter.LogFilter               :28   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-15 22:50:23.505 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-15 22:50:23.506 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://localhost:8097/hello GET
+2022-08-15 22:50:23.507 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-15 22:50:23.549 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：41 ms -------------
+2022-08-15 22:50:23.551 INFO  com.fanfanfan.wiki.filter.LogFilter               :32   [32m                  [0;39m ------------- LogFilter 结束 耗时：72 ms -------------
+2022-08-15 22:51:13.080 INFO  com.fanfanfan.wiki.filter.LogFilter               :26   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-08-15 22:51:13.080 INFO  com.fanfanfan.wiki.filter.LogFilter               :27   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-15 22:51:13.080 INFO  com.fanfanfan.wiki.filter.LogFilter               :28   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-15 22:51:13.161 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-08-15 22:51:14.785 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-08-15 22:51:14.795 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 22:51:14.822 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 22:51:14.855 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 22:51:14.856 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 22:51:14.857 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 22:51:14.858 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 22:51:14.859 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 22:51:14.860 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 22:51:14.950 INFO  com.fanfanfan.wiki.filter.LogFilter               :32   [32m                  [0;39m ------------- LogFilter 结束 耗时：1869 ms -------------
