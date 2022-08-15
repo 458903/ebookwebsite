@@ -31,20 +31,17 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
     public  List<EbookQueryResp>  list(EbookQueryReq rep) {
+        //模糊查询的EbookExample
         EbookExample example = new EbookExample();
         EbookExample.Criteria criteria = example.createCriteria();
         criteria.andNameLike("%"+rep.getName()+"%");
 
-
+        //根据EbookExample查出ebookList,ebookList的类型是一个list，里面装的是Ebook对象
         List<Ebook> ebookList = ebookMapper.selectByExample(example);
-        List<EbookQueryResp> respList =new ArrayList<>();
-        for (Ebook ebook : ebookList) {
-            EbookQueryResp ebookQueryResp = new EbookQueryResp();
-           // ebookQueryResp.setId(ebook.getId());
-            BeanUtils.copyProperties(ebook,ebookQueryResp);
-          //  ebookQueryResp.setId(40L);
-            respList.add(ebookQueryResp);
-        }
+        //现在要把List<Ebook>换成List<EbookQueryResp>(为了安全起见，要把响应包装起来)
+        List<EbookQueryResp> respList = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+
+
         return respList;
     }}
 
