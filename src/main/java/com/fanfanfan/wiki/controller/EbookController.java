@@ -18,9 +18,15 @@ public class EbookController {
 
     @Resource
     private EbookService ebookService;
+    /*后端会有很多个接口，为了让前端统一处理逻辑（登录校验、权限校验），需要统一处理后端的返回值*/
     @GetMapping("/list")
-    public List<Ebook> list(){
-        return ebookService.list();
+    public CommonResp list(){
+
+        CommonResp<List<Ebook>> resp = new CommonResp<>();
+        List<Ebook> list=ebookService.list();
+        resp.setContent(list);
+        return resp;
+
     }
 
 
