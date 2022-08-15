@@ -34,7 +34,9 @@ public class EbookService {
         //模糊查询的EbookExample
         EbookExample example = new EbookExample();
         EbookExample.Criteria criteria = example.createCriteria();
-        criteria.andNameLike("%"+rep.getName()+"%");
+        if (!ObjectUtils.isEmpty(rep.getName())){
+           criteria.andNameLike("%"+rep.getName()+"%");
+        }
 
         //根据EbookExample查出ebookList,ebookList的类型是一个list，里面装的是Ebook对象
         List<Ebook> ebookList = ebookMapper.selectByExample(example);

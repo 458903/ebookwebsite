@@ -1106,3 +1106,803 @@ Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.EbookSer
 2022-08-15 17:43:18.591 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
 2022-08-15 17:43:18.591 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
 2022-08-15 17:43:18.591 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:25.021 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:25.021 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:25.031 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:25.031 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:25.031 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:25.041 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:25.041 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:25.041 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:25.041 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:25.041 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:28.707 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:28.707 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:28.717 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:28.717 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:28.717 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:28.727 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:28.727 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:28.727 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:28.727 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:28.727 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:46.585 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:46.585 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:46.595 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:46.595 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:46.595 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:46.595 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:46.605 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:46.605 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:46.605 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:46.605 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:49.834 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:49.834 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:49.834 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:49.834 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:49.834 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:49.854 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:49.854 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:49.854 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:49.854 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:49.854 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:54.371 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:54.372 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:54.374 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:54.374 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:54.375 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:47:54.414 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:47:54.415 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:47:54.418 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:47:54.419 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:47:54.420 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:04.846 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:04.848 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:04.850 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:04.851 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:04.852 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:04.865 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:04.866 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:04.869 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:04.870 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:04.871 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:06.931 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:06.931 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:06.939 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:06.939 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:06.941 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:07.973 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:07.973 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:07.981 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:07.981 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:07.983 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:10.458 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:10.468 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:10.468 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:10.468 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:10.468 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:10.538 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:10.538 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:10.548 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:10.548 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:10.548 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:14.381 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:14.381 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:14.381 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:14.381 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:14.381 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:14.401 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:14.401 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:14.411 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:14.411 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:14.411 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:41.113 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:41.113 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:41.123 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:41.123 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:41.123 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:41.123 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:41.123 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:41.133 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:41.133 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:41.133 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:44.754 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:44.764 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:44.764 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:44.764 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:44.764 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:54:44.774 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:54:44.774 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:54:44.774 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:54:44.774 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:54:44.774 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:55:53.643 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:55:53.644 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:55:53.646 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:55:53.646 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:55:53.647 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:55:53.654 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:55:53.655 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:55:53.656 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:55:53.657 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:55:53.658 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:20.926 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:20.927 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:20.928 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:20.929 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:20.930 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:20.936 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:20.937 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:20.939 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:20.939 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:20.940 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:31.396 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:31.396 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:31.396 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:31.396 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:31.396 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:31.416 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:31.416 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:31.416 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:31.416 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:31.416 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:33.300 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:33.300 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:33.300 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:33.300 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:33.300 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 17:56:33.310 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 17:56:33.310 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 17:56:33.310 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 17:56:33.310 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 17:56:33.310 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:04:55.613 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:04:55.615 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:04:55.615 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:04:55.615 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:04:55.615 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:04:55.625 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:04:55.625 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:04:55.625 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:04:55.625 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:04:55.625 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:04:57.144 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:04:57.144 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:04:57.144 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:04:57.144 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:04:57.144 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:04:57.154 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:04:57.154 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:04:57.154 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:04:57.154 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:04:57.154 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:28.743 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:28.753 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:28.753 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:28.753 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:28.753 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:28.873 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:28.873 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:28.873 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:28.873 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:28.883 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:30.676 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:30.676 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:30.676 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:30.676 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:30.676 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:30.686 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:30.686 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:30.686 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:30.696 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:30.696 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:58.226 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:58.226 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:58.228 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:58.228 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:58.228 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:05:58.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:05:58.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:05:58.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:05:58.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:05:58.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:06:13.219 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:06:13.219 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:06:13.219 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:06:13.219 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:06:13.219 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:06:13.229 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:06:13.229 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:06:13.229 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:06:13.229 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:06:13.229 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:04.700 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:04.700 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:04.709 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:04.711 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:04.711 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:04.721 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:04.721 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:04.721 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:04.721 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:04.721 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:04.880 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:04.882 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:04.882 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:04.882 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:04.882 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:04.890 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:04.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:04.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:04.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:04.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:09.323 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:09.324 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:09.326 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:09.326 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:09.327 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:09.448 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:09.449 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:09.451 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:09.451 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:09.452 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:40.960 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:40.960 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:40.960 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:40.960 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:40.960 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:40.970 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:40.970 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:40.970 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:40.970 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:40.970 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:47.108 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:47.108 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:47.108 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:47.108 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:47.116 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:47.118 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:47.118 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:47.118 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:47.118 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:47.118 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:51.246 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:51.246 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:51.246 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:51.246 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:51.256 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 18:07:51.297 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 18:07:51.297 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 18:07:51.297 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 18:07:51.297 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 18:07:51.297 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 19:32:56.006 WARN  com.zaxxer.hikari.pool.HikariPool                 :788  [32m                  [0;39m HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m6s844ms831µs800ns).
+2022-08-15 21:05:24.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:24.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:24.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:24.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:24.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:24.288 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:24.288 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:24.288 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:24.288 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:24.298 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:25.306 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:25.306 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:25.316 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:25.316 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:25.316 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:25.336 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:25.336 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:25.336 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:25.336 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:25.336 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:31.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:31.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:31.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:31.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:31.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:31.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:31.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:31.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:31.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:31.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:05:50.623 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:05:50.624 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:05:50.625 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:05:50.626 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:05:50.626 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:07:57.189 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:07:57.199 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:07:57.199 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:07:57.199 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:07:57.199 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:07:57.209 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:07:57.209 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:07:57.209 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:07:57.209 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:07:57.209 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:08:22.991 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:08:22.991 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:08:22.991 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:08:22.991 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:08:22.991 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:08:23.121 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:08:23.131 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:08:23.131 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:08:23.131 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:08:23.131 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:09:06.696 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:09:06.697 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:09:06.699 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:09:06.699 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:09:06.700 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:09:06.730 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:09:06.730 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:09:06.730 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:09:06.730 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:09:06.730 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:11.895 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:11.895 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:11.895 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:11.895 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:11.895 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:11.905 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:11.905 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:11.905 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:11.905 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:11.905 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:15.598 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:15.598 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:15.598 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:15.598 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:15.598 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:15.618 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:15.628 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:15.628 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:15.628 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:15.628 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:20.131 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:20.131 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:20.141 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:20.141 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:20.141 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:20.221 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:20.221 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:20.221 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:20.221 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:20.231 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:30.929 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:30.930 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:30.932 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:30.933 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:30.933 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:31.017 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:31.018 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:31.020 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:31.020 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:31.021 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:43.772 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:43.772 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:43.772 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:43.772 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:43.772 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:43.782 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:43.782 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:43.782 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:43.782 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:43.782 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:47.460 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:47.460 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:47.460 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:47.460 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:47.460 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:47.470 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:47.470 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:47.470 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:47.470 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:47.470 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:52.192 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:52.192 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:52.202 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:52.202 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:52.202 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:52.202 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:52.202 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:52.212 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:52.212 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:52.212 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:54.287 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:54.295 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:54.297 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:54.297 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:54.297 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:10:54.327 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:10:54.327 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:10:54.335 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:10:54.335 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:10:54.335 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:01.661 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:01.661 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:01.661 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:01.661 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:01.661 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:01.670 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:01.670 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:01.670 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:01.670 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:01.670 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:10.211 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:10.211 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:10.211 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:10.211 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:10.211 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:10.321 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:10.321 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:10.321 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:10.321 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:10.321 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:34.138 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:34.138 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:34.138 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:34.148 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:34.148 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:34.148 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:34.148 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:34.148 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:34.148 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:34.158 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:52.623 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:52.623 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:52.623 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:52.623 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:52.623 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:11:52.633 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:11:52.633 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:11:52.633 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:11:52.633 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:11:52.633 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:18:54.925 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:18:54.926 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:18:54.928 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:18:54.928 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:18:54.929 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:18:55.792 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:18:55.793 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:18:55.794 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:18:55.795 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:18:55.796 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:19:46.591 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:19:46.592 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:19:46.593 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:19:46.594 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:19:46.594 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:17.169 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:17.170 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:17.172 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:17.172 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:17.173 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:17.195 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:17.196 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:17.197 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:17.198 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:17.198 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:22.567 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:22.567 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:22.568 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:22.569 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:22.569 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:22.587 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:22.587 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:22.588 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:22.589 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:22.589 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:31.811 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:31.812 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:31.814 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:31.814 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:31.815 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:20:31.842 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:20:31.843 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:20:31.844 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:20:31.845 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:20:31.845 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:24:19.847 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:24:19.847 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:24:19.848 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:24:19.849 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:24:19.849 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:24:19.964 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:24:19.965 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:24:19.966 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:24:19.966 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:24:19.967 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:24:20.080 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:24:20.081 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:24:20.083 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:24:20.083 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:24:20.084 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:33:14.946 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:33:14.947 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:33:14.949 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:33:14.949 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:33:14.950 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:33:15.941 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:33:15.942 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:33:15.943 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:33:15.944 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:33:15.945 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:41:02.591 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:41:02.592 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:41:02.594 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:41:02.595 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:41:02.596 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:41:03.269 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( `name` like ? )
+2022-08-15 21:41:03.270 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: %vue%(String)
+2022-08-15 21:41:03.271 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:41:03.272 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:41:03.272 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-15 21:44:08.801 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-08-15 21:44:08.812 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-08-15 21:44:09.050 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:44:09.051 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:44:09.404 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:44:09.405 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:09.405 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:44:09.406 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:44:09.437 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:44:09.438 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 383 ms
+2022-08-15 21:44:09.713 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 21:44:09.725 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:09.728 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 21:44:09.735 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.739 seconds (JVM running for 14490.738)
+2022-08-15 21:44:09.737 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 21:44:09.738 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 21:44:09.738 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 21:44:16.704 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:44:16.704 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:44:16.948 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:44:16.949 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:16.949 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:44:16.949 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:44:16.996 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:44:16.997 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 288 ms
+2022-08-15 21:44:17.159 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 21:44:17.167 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:17.171 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 21:44:17.177 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.511 seconds (JVM running for 14498.179)
+2022-08-15 21:44:17.180 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 21:44:17.181 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 21:44:17.182 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 21:44:36.198 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:44:36.199 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:44:36.425 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:44:36.426 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:36.426 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:44:36.426 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:44:36.458 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:44:36.458 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 256 ms
+2022-08-15 21:44:36.606 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 21:44:36.616 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:36.619 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 21:44:36.624 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.464 seconds (JVM running for 14517.626)
+2022-08-15 21:44:36.626 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 21:44:36.626 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 21:44:36.627 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 21:44:49.652 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:44:49.653 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:44:49.959 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:44:49.960 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:44:49.961 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:44:49.961 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:44:49.990 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:44:49.990 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 335 ms
+2022-08-15 21:44:50.076 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@13ff90ae]
+2022-08-15 21:44:50.076 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-08-15 21:44:50.084 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-15 21:44:50.116 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@13ff90ae]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.fanfanfan.wiki.config.WikiApplication.main(WikiApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@13ff90ae]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/fanfanfan/wiki/service/EbookService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.EbookService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2022-08-15 21:45:16.828 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:45:16.828 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:45:17.065 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:45:17.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:45:17.066 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:45:17.066 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:45:17.089 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:45:17.089 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 258 ms
+2022-08-15 21:45:17.221 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 21:45:17.231 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:45:17.233 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 21:45:17.238 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.449 seconds (JVM running for 14558.24)
+2022-08-15 21:45:17.239 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 21:45:17.240 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 21:45:17.240 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 21:45:22.116 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:45:22.117 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:45:22.376 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:45:22.377 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:45:22.377 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:45:22.378 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:45:22.401 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:45:22.401 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 281 ms
+2022-08-15 21:45:22.466 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17e92d16]
+2022-08-15 21:45:22.467 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-08-15 21:45:22.473 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-15 21:45:22.477 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17e92d16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.fanfanfan.wiki.config.WikiApplication.main(WikiApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17e92d16]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/fanfanfan/wiki/service/EbookService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.EbookService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2022-08-15 21:45:52.215 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 5860 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-15 21:45:52.215 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-15 21:45:52.469 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-15 21:45:52.470 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:45:52.470 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-15 21:45:52.471 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-15 21:45:52.495 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-15 21:45:52.496 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 278 ms
+2022-08-15 21:45:52.658 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-15 21:45:52.665 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-15 21:45:52.669 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-15 21:45:52.673 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.49 seconds (JVM running for 14593.676)
+2022-08-15 21:45:52.675 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-15 21:45:52.675 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-15 21:45:52.675 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-15 21:46:10.873 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-15 21:46:10.874 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-08-15 21:46:10.875 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-08-15 21:46:10.881 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-08-15 21:46:10.909 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-08-15 21:46:10.910 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:46:10.911 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:46:10.912 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:46:10.912 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:46:10.913 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:46:10.913 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:46:10.914 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:46:10.914 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:46:10.930 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:46:10.930 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:46:10.932 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:46:10.933 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:46:10.933 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:46:10.933 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:46:10.934 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:46:10.934 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:49:48.178 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:49:48.179 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:49:48.181 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:49:48.182 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:49:48.183 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:49:48.183 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:49:48.184 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:49:48.184 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:49:49.424 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:49:49.424 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:49:49.426 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:49:49.427 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:49:49.428 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:49:49.428 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:49:49.429 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:49:49.431 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:49:53.878 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:49:53.879 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:49:53.881 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:49:53.881 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:49:53.882 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:49:53.883 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:49:53.884 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:49:53.884 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:49:53.943 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:49:53.944 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:49:53.946 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:49:53.947 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:49:53.947 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:49:53.948 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:49:53.949 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:49:53.949 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:53:52.863 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:53:52.864 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:53:52.866 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:53:52.867 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:53:52.868 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:53:52.868 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:53:52.870 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:53:52.870 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-15 21:53:53.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook
+2022-08-15 21:53:53.248 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2022-08-15 21:53:53.250 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-15 21:53:53.250 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, null, null, null, null
+2022-08-15 21:53:53.251 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, null, null, 考研数一高分计划, null, null, null, null
+2022-08-15 21:53:53.252 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, null, null, null, null
+2022-08-15 21:53:53.253 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, null, null, null, null
+2022-08-15 21:53:53.253 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
