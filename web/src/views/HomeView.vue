@@ -61,13 +61,16 @@ import { defineComponent } from 'vue';
 import axios from "axios";
 export default defineComponent({
  name: 'HomeView',
-  components: {
-    //HelloWorld,
-
- },setup(){
+  components: {},
+  setup(){//功能：通过axios调用电子书列表接口
+   //setup方法:vue3新增初始化方法
    console.log("setup");
-   axios.get("")
-  }
+   axios.get("http://localhost:8097/ebook/list?name=vue")
+ .then((response)=>{
+   console.log(response);
+
+ })
+ }
 
 });
 </script>
