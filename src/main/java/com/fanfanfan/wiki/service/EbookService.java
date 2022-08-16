@@ -13,6 +13,8 @@ import com.fanfanfan.wiki.resp.EbookQueryResp;
 //import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.util.CopyUtil;
 //import com.fanfanfan.wiki.util.SnowFlake;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -25,21 +27,23 @@ import java.util.List;
 
 @Service
 public class EbookService {
-
-    private static final Logger LOG = LoggerFactory.getLogger(EbookService.class);
-
+    private static final Logger LOG=LoggerFactory.getLogger(EbookService.class);
     @Resource
     private EbookMapper ebookMapper;
     public  List<EbookQueryResp>  list(EbookQueryReq rep) {
+
         //模糊查询的EbookExample
         EbookExample example = new EbookExample();
         EbookExample.Criteria criteria = example.createCriteria();
         if (!ObjectUtils.isEmpty(rep.getName())){
            criteria.andNameLike("%"+rep.getName()+"%");
         }
-
+        PageHelper.startPage(1,2);
         //根据EbookExample查出ebookList,ebookList的类型是一个list，里面装的是Ebook对象
         List<Ebook> ebookList = ebookMapper.selectByExample(example);
+        PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
+        LOG.info("总行数：{}", pageInfo.getTotal());
+        LOG.info("总页数：{}", pageInfo.getPages());
         //现在要把List<Ebook>换成List<EbookQueryResp>(为了安全起见，要把响应包装起来)
         List<EbookQueryResp> respList = CopyUtil.copyList(ebookList, EbookQueryResp.class);
 

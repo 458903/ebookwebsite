@@ -1,4 +1,4 @@
-GET http://localhost:8097/ebook/list?name=vue
+GET http://localhost:8097/ebook/list
 
 ###
 
