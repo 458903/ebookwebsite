@@ -570,3 +570,558 @@ Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.EbookSer
 2022-08-17 20:27:45.579 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
 2022-08-17 20:27:45.589 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"}],"total":4},"success":true}
 2022-08-17 20:27:45.589 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：70 ms -------------
+2022-08-17 20:31:32.545 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:31:32.545 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:31:32.546 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:31:32.546 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:31:32.546 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:31:32.546 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:31:32.546 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:31:32.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：1 ms -------------
+2022-08-17 20:31:50.271 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:31:50.271 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:31:50.272 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:31:50.272 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:31:50.273 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:31:50.289 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:31:50.289 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:31:50.289 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:31:50.289 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:31:50.289 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:31:50.289 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:31:50.289 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:31:50.289 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:31:50.289 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2022-08-17 20:55:20.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:55:20.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:55:20.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:55:20.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:55:20.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:55:20.155 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:55:20.162 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:55:20.162 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:55:20.162 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:55:20.162 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:55:20.162 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:55:20.162 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:55:20.162 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:55:20.162 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2022-08-17 20:55:37.159 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:55:37.160 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:55:37.160 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:55:37.160 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:55:37.161 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:55:37.163 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:55:37.164 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:55:37.165 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:55:37.165 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:55:37.165 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:55:37.166 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:55:37.166 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:55:37.167 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:55:37.167 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2022-08-17 20:56:02.220 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:02.220 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:02.221 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:02.221 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:02.221 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:56:02.224 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:02.225 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:02.227 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:02.227 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:02.228 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:02.229 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:02.229 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:56:02.230 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:56:02.230 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-17 20:56:03.637 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:03.637 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:03.638 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:03.638 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:03.638 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:56:03.640 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:03.641 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:03.642 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:03.642 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:03.643 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:03.643 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:56:03.644 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:56:03.645 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:03.645 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:56:03.646 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:56:03.647 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:56:03.648 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:56:03.648 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:56:03.649 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:03.649 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:56:03.651 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:56:03.651 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-17 20:56:05.452 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:05.452 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:05.453 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:05.453 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:05.453 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:56:05.455 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:05.456 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:05.457 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:05.457 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:05.458 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:05.458 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:05.459 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:56:05.459 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:56:05.459 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2022-08-17 20:56:08.203 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:08.204 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:08.204 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:08.204 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:08.205 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:56:08.207 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:08.208 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:08.209 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:08.209 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:08.210 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:08.211 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:56:08.212 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:56:08.214 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:08.214 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:56:08.215 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:56:08.215 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:56:08.216 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:56:08.216 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:56:08.217 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:08.218 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:56:08.219 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:56:08.219 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：16 ms -------------
+2022-08-17 20:56:26.892 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:26.892 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:26.892 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:26.892 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:26.892 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2022-08-17 20:56:26.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:26.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:26.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:26.892 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:26.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:26.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:56:26.892 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-08-17 20:56:26.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:26.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:56:26.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:56:26.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2022-08-17 20:56:26.902 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:26.902 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:56:26.902 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"}],"total":4},"success":true}
+2022-08-17 20:56:26.902 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-17 20:56:28.897 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:28.897 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:28.898 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:28.898 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:28.899 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":2,"size":2}]
+2022-08-17 20:56:28.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:28.902 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:28.904 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:28.904 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:28.905 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:28.906 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-08-17 20:56:28.907 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 2(Long), 2(Integer)
+2022-08-17 20:56:28.908 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:28.908 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:56:28.909 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:56:28.909 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2022-08-17 20:56:28.910 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:28.910 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:56:28.911 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:56:28.911 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-17 20:56:29.688 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:29.689 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:29.689 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:29.689 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:29.690 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2022-08-17 20:56:29.693 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:29.694 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:29.695 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:29.696 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:29.697 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:29.697 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:56:29.698 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-08-17 20:56:29.699 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:29.700 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:56:29.703 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:56:29.704 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 2
+2022-08-17 20:56:29.705 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:29.705 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:56:29.714 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"}],"total":4},"success":true}
+2022-08-17 20:56:29.714 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：26 ms -------------
+2022-08-17 20:56:50.318 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:56:50.318 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:56:50.318 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:56:50.318 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:56:50.318 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:56:50.318 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:56:50.318 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:56:50.318 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:56:50.328 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:56:50.329 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:56:50.330 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:56:50.330 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:56:50.332 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:56:50.332 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:56:50.333 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:56:50.334 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:56:50.335 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:56:50.335 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:56:50.336 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:56:50.336 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:56:50.336 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:56:50.336 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2022-08-17 20:57:20.938 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:57:20.938 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:57:20.938 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:57:20.938 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:57:20.938 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:57:20.938 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:57:20.948 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:57:20.948 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:57:20.948 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:57:20.948 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:57:20.948 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:57:20.948 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:57:20.948 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:57:20.948 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-17 20:57:43.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:57:43.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:57:43.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:57:43.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:57:43.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":0}]
+2022-08-17 20:57:43.928 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:57:43.928 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:57:43.928 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:57:43.928 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:57:43.928 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:57:43.928 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:57:43.928 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:57:43.928 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:57:43.928 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-17 20:57:43.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:57:43.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:57:43.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:57:43.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:57:43.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:57:43.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:57:43.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:57:43.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:57:43.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:57:43.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:57:43.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:57:43.978 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:57:43.978 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:57:43.978 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:57:43.978 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:57:43.978 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-17 20:58:35.458 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:35.459 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:35.459 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:35.459 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:35.460 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":3}]
+2022-08-17 20:58:35.463 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:35.464 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:35.466 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:35.467 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:35.467 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:35.469 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:58:35.470 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-08-17 20:58:35.471 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:58:35.472 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:58:35.473 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:58:35.474 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:58:35.474 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 3
+2022-08-17 20:58:35.475 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:35.475 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:58:35.476 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"}],"total":4},"success":true}
+2022-08-17 20:58:35.476 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2022-08-17 20:58:37.746 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:37.747 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:37.747 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:37.747 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:37.747 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":2,"size":3}]
+2022-08-17 20:58:37.750 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:37.751 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:37.753 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:37.753 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:37.754 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:37.755 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-08-17 20:58:37.756 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 3(Long), 3(Integer)
+2022-08-17 20:58:37.757 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:58:37.758 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:58:37.759 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:37.760 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:37.760 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:58:37.761 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:58:37.762 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：16 ms -------------
+2022-08-17 20:58:39.097 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:39.097 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:39.098 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:39.098 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:39.098 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":3}]
+2022-08-17 20:58:39.100 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:39.101 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:39.102 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:39.103 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:39.103 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:39.104 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:58:39.104 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-08-17 20:58:39.105 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:58:39.106 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:58:39.107 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:58:39.107 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:58:39.107 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 3
+2022-08-17 20:58:39.108 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:39.108 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：2
+2022-08-17 20:58:39.109 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"}],"total":4},"success":true}
+2022-08-17 20:58:39.109 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-17 20:58:44.793 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:44.793 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:44.793 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:44.794 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:44.794 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:58:44.796 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:44.797 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:44.798 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:44.799 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:44.799 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:44.800 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:58:44.800 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:58:44.802 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:58:44.802 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:58:44.803 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:58:44.804 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:58:44.805 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:58:44.805 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:58:44.805 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:44.806 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:58:44.806 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:58:44.806 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-17 20:58:46.282 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:46.282 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:46.283 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:46.283 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:46.283 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-08-17 20:58:46.285 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:46.286 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:46.288 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:46.288 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:46.288 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:46.289 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:46.289 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：0
+2022-08-17 20:58:46.290 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-08-17 20:58:46.290 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2022-08-17 20:58:46.968 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 20:58:46.969 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 20:58:46.969 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 20:58:46.970 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 20:58:46.970 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 20:58:46.973 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 20:58:46.974 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 20:58:46.975 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 20:58:46.975 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 20:58:46.976 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 20:58:46.977 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 20:58:46.977 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 20:58:46.978 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 20:58:46.979 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 20:58:46.979 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 20:58:46.980 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 20:58:46.980 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 20:58:46.980 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 20:58:46.981 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 20:58:46.981 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 20:58:46.982 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 20:58:46.982 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-17 21:04:41.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:04:41.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:04:41.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:04:41.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:04:41.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 21:04:41.746 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:04:41.748 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:04:41.748 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:04:41.748 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:04:41.748 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:04:41.748 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:04:41.748 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:04:41.756 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:04:41.756 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:04:41.758 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:04:41.758 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2022-08-17 21:04:59.513 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:04:59.513 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:04:59.514 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:04:59.514 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:04:59.515 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-08-17 21:04:59.517 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:04:59.518 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:04:59.519 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:04:59.519 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:04:59.520 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:04:59.520 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:04:59.521 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-08-17 21:04:59.522 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:04:59.523 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:04:59.523 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:04:59.524 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:04:59.524 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:04:59.525 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:04:59.525 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:04:59.525 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:04:59.526 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:04:59.526 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-17 21:16:46.962 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:16:46.963 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:16:46.963 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:16:46.963 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:16:46.964 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-08-17 21:16:46.966 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:16:46.966 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:16:46.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:16:46.968 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:16:46.968 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:16:46.969 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:16:46.969 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-08-17 21:16:46.970 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:16:46.970 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:16:46.971 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:16:46.971 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:16:46.972 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:16:46.972 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:16:46.972 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:16:46.973 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:16:46.973 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:16:46.974 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-17 21:18:15.239 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:18:15.240 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:18:15.240 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:18:15.240 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:18:15.241 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-08-17 21:18:15.243 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:18:15.243 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:18:15.244 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:18:15.245 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:18:15.245 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:18:15.245 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:18:15.246 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-08-17 21:18:15.247 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:18:15.247 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:18:15.247 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:18:15.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:18:15.248 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:18:15.249 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:18:15.249 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:18:15.249 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:18:15.250 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:18:15.250 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-17 21:21:09.175 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:21:09.175 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:21:09.176 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:21:09.176 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:21:09.176 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 21:21:09.179 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:21:09.179 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:21:09.180 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:21:09.181 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:21:09.181 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:21:09.182 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:21:09.182 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 21:21:09.183 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:21:09.184 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:21:09.185 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:21:09.186 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:21:09.186 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:21:09.187 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:21:09.187 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:21:09.188 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:21:09.188 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:21:09.189 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-17 21:48:13.700 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:48:13.701 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:48:13.702 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:48:13.702 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:48:13.702 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":1000}]
+2022-08-17 21:48:13.702 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:48:13.702 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:48:13.702 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:48:13.702 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:48:13.702 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:48:13.702 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:48:13.702 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 1000(Integer)
+2022-08-17 21:48:13.712 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:48:13.712 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:48:13.712 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:48:13.712 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:48:13.712 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:48:13.712 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:48:13.712 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:48:13.712 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:48:13.712 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:48:13.712 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-17 21:48:25.058 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:48:25.058 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:48:25.058 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:48:25.058 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:48:25.059 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 21:48:25.061 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:48:25.062 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:48:25.063 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:48:25.063 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:48:25.064 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:48:25.065 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:48:25.065 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 21:48:25.067 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:48:25.067 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:48:25.068 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:48:25.068 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:48:25.069 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:48:25.069 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:48:25.070 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:48:25.070 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:48:25.071 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:48:25.071 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-17 21:59:22.139 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-17 21:59:22.140 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-17 21:59:22.140 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-17 21:59:22.141 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-17 21:59:22.141 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2022-08-17 21:59:22.145 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-17 21:59:22.146 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-17 21:59:22.148 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-17 21:59:22.148 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2022-08-17 21:59:22.149 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-17 21:59:22.150 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-17 21:59:22.151 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2022-08-17 21:59:22.153 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-17 21:59:22.153 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1, 考研词汇闪过, null, null, 考研单词, /image/cover2.png, null, null, null
+2022-08-17 21:59:22.154 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2, 早期鸟计划, 1, 2, 考研数一高分计划, /image/OIP2.jpg, null, null, null
+2022-08-17 21:59:22.157 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 3, python零基础入门, null, null, 小白零基础学pytho, /image/cover1.png, null, null, null
+2022-08-17 21:59:22.158 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 4, vue入门教程, null, null, 企业级应用开发最佳首选框架, /image/OIP-C.jpg, null, null, null
+2022-08-17 21:59:22.159 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 4
+2022-08-17 21:59:22.160 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：4
+2022-08-17 21:59:22.161 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-17 21:59:22.162 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover2.png","description":"考研单词","id":1,"name":"考研词汇闪过"},{"category1Id":1,"category2Id":2,"cover":"/image/OIP2.jpg","description":"考研数一高分计划","id":2,"name":"早期鸟计划"},{"cover":"/image/cover1.png","description":"小白零基础学pytho","id":3,"name":"python零基础入门"},{"cover":"/image/OIP-C.jpg","description":"企业级应用开发最佳首选框架","id":4,"name":"vue入门教程"}],"total":4},"success":true}
+2022-08-17 21:59:22.162 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：23 ms -------------

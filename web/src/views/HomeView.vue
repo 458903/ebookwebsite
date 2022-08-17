@@ -84,7 +84,8 @@
 import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons-vue';
 import { defineComponent ,onMounted,ref} from 'vue';
 import axios from "axios";
-const listData: Record<string, string>[] = [];
+
+/*const listData: Record<string, string>[] = [];
 for (let i = 0; i < 23; i++) {
   listData.push({
     href: 'https://www.antdv.com/',
@@ -95,7 +96,7 @@ for (let i = 0; i < 23; i++) {
     content:
             'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
   });
-}
+}*/
 export default defineComponent({
  name: 'HomeView',
   components: {
@@ -120,17 +121,15 @@ setup(){//功能：通过axios调用电子书列表接口
  // setup就只用放一些参数定义、方法定义，尽量把初始化方法写到生命周期函数里面，免得界面渲染的时候报错
      console.log("onMounted3443");
     //如果不加上面这行代码，就会报错“ Cannot read properties of null (reading 'parentNode')”
-     axios.get("/ebook/list")
-             .then((response)=>{
+     axios.get("/ebook/list",{params:{
+       page:1,
+         size:1000
+       }}).then((response)=>{
                const data=response.data;
-               ebook.value=data.content;
-              // console.log(response);
-             });
-   }
-   )
+               ebook.value=data.content.list;});
+   })
     return {
       ebook,
-      listData,
       pagination,
       actions,
     }
