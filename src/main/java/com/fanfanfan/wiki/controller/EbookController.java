@@ -6,6 +6,7 @@ import com.fanfanfan.wiki.rep.EbookSaveReq;
 import com.fanfanfan.wiki.resp.CommonResp;
 import com.fanfanfan.wiki.resp.EbookQueryResp;
 //import com.fanfanfan.wiki.resp.PageResp;
+import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.service.EbookService;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,8 +24,8 @@ public class EbookController {
     @GetMapping("/list")
     public CommonResp list(EbookQueryReq rep){
 
-        CommonResp<List<EbookQueryResp>> resp = new CommonResp<>();
-        List<EbookQueryResp> list=ebookService.list(rep);
+        CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
+        PageResp<EbookQueryResp> list=ebookService.list(rep);
         resp.setContent(list);
         return resp;
 
