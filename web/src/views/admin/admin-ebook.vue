@@ -17,7 +17,7 @@
                 </template>
                 <template v-slot:action="{ text, record }">
                     <a-space size="small">
-                        <a-button type="primary" @click="edit">
+                        <a-button type="primary" @click="edit(record)">
                             编辑
                         </a-button>
                         <a-button type="danger">
@@ -33,37 +33,14 @@
             title="Title"
             :confirm-loading="modalLoading"
             @ok="handleModalOk"
-    ><p> <a-form
-            :model="formState"
-            name="basic"
-            :label-col="{ span: 8 }"
-            :wrapper-col="{ span: 16 }"
-            autocomplete="off"
-            @finish="onFinish"
-            @finishFailed="onFinishFailed"
     >
-        <a-form-item
-                label="Username"
-                name="username"
-                :rules="[{ required: true, message: 'Please input your username!' }]"
-        >
-            <a-input v-model:value="formState.username" />
+        <p>
+            <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+        <a-form-item label="封面">
+            <a-input v-model:value="ebook.cover" />
         </a-form-item>
-
-        <a-form-item
-                label="Password"
-                name="password"
-                :rules="[{ required: true, message: 'Please input your password!' }]"
-        >
-            <a-input-password v-model:value="formState.password" />
-        </a-form-item>
-
-        <a-form-item name="remember" :wrapper-col="{ offset: 8, span: 16 }">
-            <a-checkbox v-model:checked="formState.remember">Remember me</a-checkbox>
-        </a-form-item>
-
-        <a-form-item :wrapper-col="{ offset: 8, span: 16 }">
-            <a-button type="primary" html-type="submit">Submit</a-button>
+        <a-form-item label="名称">
+            <a-input v-model:value="ebook.name" />
         </a-form-item>
     </a-form></p>
 
@@ -82,6 +59,7 @@
         components: {
         },
         setup() {
+            const ebook = ref({});
             const param = ref();
             param.value = {};
             const ebooks = ref();
@@ -123,18 +101,8 @@
                     slots: { customRender: 'action' }
                 }
             ];
-            const formState = reactive<FormState>({
-                username: '',
-                password: '',
-                remember: true,
-            });
-            const onFinish = (values: any) => {
-                console.log('Success:', values);
-            };
 
-            const onFinishFailed = (errorInfo: any) => {
-                console.log('Failed:', errorInfo);
-            };
+
             const handleQuery=(params: any)=>{
                 loading.value=true;
                 axios.get("/ebook/list",{
@@ -163,6 +131,7 @@
                     size: pagination.pageSize
                 });
             };
+
             const modalVisible=ref(false);
             const modalLoading=ref(false);
             const handleModalOk=()=>{
@@ -172,8 +141,9 @@
                     modalLoading.value=false;
                 },2000);
             };
-            const edit=()=>{
+            const edit=(record:any)=>{
                 modalVisible.value=true;
+                ebook.value=record;
             }
 
             onMounted(()=>{
@@ -184,6 +154,7 @@
             return {
                 columns,
                 ebooks,
+                ebook,
                 pagination,
                 loading,
                 handleTableChange,
@@ -191,9 +162,6 @@
                 handleModalOk,
                 modalLoading,
                 modalVisible,
-                formState,
-                onFinish,
-                onFinishFailed,
             };
         },
     });
