@@ -136,11 +136,18 @@
             const modalLoading=ref(false);
             const handleModalOk=()=>{
                 modalLoading.value=true;
-                setTimeout(()=>{
-                    modalVisible.value=false;
-                    modalLoading.value=false;
-                },2000);
-            };
+                axios.post("/ebook/save",ebook.value).then(
+                    (response)=>{
+                       const data=response.data;
+                       if(data.success){
+                           modalVisible.value=false;
+                           modalLoading.value=false;
+                           handleQuery({
+                               page:1,
+                               size:pagination.value.pageSize});
+                       }
+                       })}
+
             const edit=(record:any)=>{
                 modalVisible.value=true;
                 ebook.value=record;

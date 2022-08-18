@@ -9,7 +9,7 @@ import com.fanfanfan.wiki.resp.EbookQueryResp;
 //import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.util.CopyUtil;
-//import com.fanfanfan.wiki.util.SnowFlake;
+import com.fanfanfan.wiki.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
@@ -24,6 +24,8 @@ public class EbookService {
     private static final Logger LOG=LoggerFactory.getLogger(EbookService.class);
     @Resource
     private EbookMapper ebookMapper;
+   @Resource
+   private SnowFlake snowFlake;
     public  PageResp<EbookQueryResp>  list(EbookQueryReq rep) {
         //模糊查询的EbookExample
         EbookExample example = new EbookExample();
@@ -45,6 +47,17 @@ public class EbookService {
         pageResp.setList(respList);
 
         return pageResp;
+    }
+    public void save(EbookSaveReq req) {
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if (ObjectUtils.isEmpty(req.getId())) {
+            // 新增
+            ebook.setId(snowFlake.nextId());
+            ebookMapper.insert(ebook);
+        } else {
+            // 更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
     }
 }
 
