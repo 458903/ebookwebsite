@@ -26,6 +26,9 @@
                     </a-space>
                 </template>
             </a-table>
+            <div :style="{ padding: '26px 16px 16px' }">
+                <a-button ghost @click="add()">新增</a-button>
+            </div>
         </a-layout-content>
     </a-layout>
     <a-modal
@@ -152,6 +155,10 @@
                 modalVisible.value=true;
                 ebook.value=record;
             }
+            const add=()=>{
+                modalVisible.value=true;
+                ebook.value={};
+            }
 
             onMounted(()=>{
                 handleQuery({
@@ -166,6 +173,7 @@
                 loading,
                 handleTableChange,
                 edit,
+                add,
                 handleModalOk,
                 modalLoading,
                 modalVisible,
