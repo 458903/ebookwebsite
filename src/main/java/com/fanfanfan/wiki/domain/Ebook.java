@@ -1,7 +1,7 @@
 package com.fanfanfan.wiki.domain;
 
 public class Ebook {
-    private Long id;
+    private Long  id;
 
     private String name;
 

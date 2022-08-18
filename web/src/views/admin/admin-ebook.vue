@@ -20,9 +20,17 @@
                         <a-button type="primary" @click="edit(record)">
                             编辑
                         </a-button>
-                        <a-button type="danger">
+                        <a-popconfirm
+                                title="是否确认删除?删除后不可恢复"
+                                ok-text="删除"
+                                cancel-text="否"
+                                @confirm="del(record.id)">
+                            <a-button type="danger">
                                 删除
-                        </a-button>
+                            </a-button>
+                        </a-popconfirm>
+
+
                     </a-space>
                 </template>
             </a-table>
@@ -45,6 +53,15 @@
         <a-form-item label="名称">
             <a-input v-model:value="ebook.name" />
         </a-form-item>
+        <a-form-item label="分类一">
+            <a-input v-model:value="ebook.category1Id" />
+        </a-form-item>
+        <a-form-item label="分类二">
+            <a-input v-model:value="ebook.category2Id" />
+        </a-form-item>
+        <a-form-item label="描述">
+            <a-input v-model:value="ebook.description" type="textarea" />
+        </a-form-item>
     </a-form></p>
 
     </a-modal>
@@ -60,6 +77,7 @@
     export default defineComponent({
         name:'AdminEbook',
         components: {
+
         },
         setup() {
             const ebook = ref({});
@@ -149,16 +167,27 @@
                                page:1,
                                size:pagination.value.pageSize});
                        }
-                       })}
+                       })
+            }
 
             const edit=(record:any)=>{
                 modalVisible.value=true;
                 ebook.value=record;
-            }
+            };
             const add=()=>{
                 modalVisible.value=true;
                 ebook.value={};
-            }
+            };
+            const del=(id: number)=>{
+                axios.delete("/ebook/delete/"+id).then((response)=>{
+                        const data=response.data;
+                        if(data.success){
+                            handleQuery({
+                                page:1,
+                                size:pagination.value.pageSize});
+                        }
+                    })
+            };
 
             onMounted(()=>{
                 handleQuery({
@@ -174,6 +203,7 @@
                 handleTableChange,
                 edit,
                 add,
+                del,
                 handleModalOk,
                 modalLoading,
                 modalVisible,
