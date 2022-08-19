@@ -3840,3 +3840,1103 @@
 2022-08-19 15:54:12.995 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2022-08-19 15:54:12.995 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
 2022-08-19 15:54:12.995 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 15:57:02.452 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 15:57:02.452 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 15:57:02.802 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 15:57:02.803 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:57:02.803 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 15:57:02.803 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 15:57:02.833 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 15:57:02.833 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 378 ms
+2022-08-19 15:57:03.192 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ebookController' method 
+com.fanfanfan.wiki.controller.EbookController#delete(Long)
+to {DELETE [/ebook/delete/{id}]}: There is already 'categoryController' bean method
+com.fanfanfan.wiki.controller.CategoryController#delete(Long) mapped.
+2022-08-19 15:57:03.193 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-08-19 15:57:03.204 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-19 15:57:03.250 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ebookController' method 
+com.fanfanfan.wiki.controller.EbookController#delete(Long)
+to {DELETE [/ebook/delete/{id}]}: There is already 'categoryController' bean method
+com.fanfanfan.wiki.controller.CategoryController#delete(Long) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.fanfanfan.wiki.config.WikiApplication.main(WikiApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'ebookController' method 
+com.fanfanfan.wiki.controller.EbookController#delete(Long)
+to {DELETE [/ebook/delete/{id}]}: There is already 'categoryController' bean method
+com.fanfanfan.wiki.controller.CategoryController#delete(Long) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 19 common frames omitted
+2022-08-19 15:58:11.975 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 15:58:11.976 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 15:58:12.339 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 15:58:12.340 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:58:12.340 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 15:58:12.341 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 15:58:12.365 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 15:58:12.365 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 387 ms
+2022-08-19 15:58:12.799 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 15:58:12.810 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:58:12.813 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 15:58:12.818 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.874 seconds (JVM running for 21213.209)
+2022-08-19 15:58:12.819 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 15:58:12.819 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 15:58:12.820 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 15:59:10.569 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 15:59:10.570 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 15:59:11.019 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 15:59:11.020 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:59:11.021 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 15:59:11.021 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 15:59:11.043 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 15:59:11.043 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 470 ms
+2022-08-19 15:59:11.533 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 15:59:11.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:59:11.547 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 15:59:11.552 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 1.026 seconds (JVM running for 21271.943)
+2022-08-19 15:59:11.554 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 15:59:11.554 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 15:59:11.554 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 15:59:22.042 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 15:59:22.043 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 15:59:22.355 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 15:59:22.356 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:59:22.356 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 15:59:22.356 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 15:59:22.381 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 15:59:22.381 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 336 ms
+2022-08-19 15:59:22.929 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 15:59:22.951 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 15:59:22.955 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 15:59:22.964 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.959 seconds (JVM running for 21283.356)
+2022-08-19 15:59:22.967 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 15:59:22.967 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 15:59:22.968 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:00:04.279 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:00:04.280 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:00:04.604 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:00:04.605 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:00:04.605 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:00:04.606 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:00:04.628 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:00:04.629 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 345 ms
+2022-08-19 16:00:05.088 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:00:05.102 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:00:05.105 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:00:05.110 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.894 seconds (JVM running for 21325.501)
+2022-08-19 16:00:05.111 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:00:05.111 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:00:05.111 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:00:46.576 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:00:46.576 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:00:46.981 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:00:46.982 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:00:46.982 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:00:46.982 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:00:47.004 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:00:47.004 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 425 ms
+2022-08-19 16:00:47.437 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:00:47.449 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:00:47.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:00:47.457 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.921 seconds (JVM running for 21367.849)
+2022-08-19 16:00:47.459 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:00:47.459 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:00:47.459 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:01:09.526 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:01:09.526 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:01:09.799 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:01:09.800 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:01:09.800 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:01:09.800 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:01:09.823 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:01:09.823 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 294 ms
+2022-08-19 16:01:10.242 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:01:10.253 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:01:10.256 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:01:10.261 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.766 seconds (JVM running for 21390.652)
+2022-08-19 16:01:10.262 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:01:10.262 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:01:10.263 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:01:45.557 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:01:45.558 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:01:45.857 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:01:45.858 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:01:45.858 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:01:45.858 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:01:45.880 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:01:45.881 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 318 ms
+2022-08-19 16:01:46.316 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:01:46.328 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:01:46.330 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:01:46.335 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.814 seconds (JVM running for 21426.727)
+2022-08-19 16:01:46.337 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:01:46.337 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:01:46.337 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:02:12.666 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:02:12.666 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:02:13.000 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:02:13.002 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:02:13.002 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:02:13.002 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:02:13.034 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:02:13.035 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 366 ms
+2022-08-19 16:02:13.070 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\CategoryController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5ead6cda]
+2022-08-19 16:02:13.070 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-08-19 16:02:13.078 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-19 16:02:13.083 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [D:\Portfolio\wiki\target\classes\com\fanfanfan\wiki\controller\CategoryController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5ead6cda]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.fanfanfan.wiki.config.WikiApplication.main(WikiApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5ead6cda]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:743)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:675)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:377)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:358)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:306)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/fanfanfan/wiki/service/CategoryService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:738)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.CategoryService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2022-08-19 16:05:35.118 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:05:35.118 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:05:35.539 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:05:35.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:05:35.540 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:05:35.540 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:05:35.570 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:05:35.570 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 448 ms
+2022-08-19 16:05:35.601 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6d596431]
+2022-08-19 16:05:35.601 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-08-19 16:05:35.610 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-19 16:05:35.616 ERROR org.springframework.boot.SpringApplication        :824  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6d596431]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at com.fanfanfan.wiki.config.WikiApplication.main(WikiApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.fanfanfan.wiki.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6d596431]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fanfanfan/wiki/resp/CommonResp
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.resp.CommonResp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 27 common frames omitted
+2022-08-19 16:06:08.476 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:06:08.477 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:06:08.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:06:08.812 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:06:08.813 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:06:08.813 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:06:08.835 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:06:08.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 355 ms
+2022-08-19 16:06:09.267 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:06:09.279 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:06:09.282 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:06:09.289 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.844 seconds (JVM running for 21689.681)
+2022-08-19 16:06:09.291 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:06:09.291 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:06:09.291 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:09:33.963 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:09:33.964 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:09:34.262 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:09:34.263 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:09:34.263 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:09:34.263 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:09:34.285 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:09:34.285 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 319 ms
+2022-08-19 16:09:34.870 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:09:34.881 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:09:34.884 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:09:34.890 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.956 seconds (JVM running for 21895.282)
+2022-08-19 16:09:34.892 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:09:34.892 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:09:34.893 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:09:58.936 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:09:58.937 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:09:59.332 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:09:59.333 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:09:59.333 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:09:59.334 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:09:59.366 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:09:59.367 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 426 ms
+2022-08-19 16:09:59.962 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:09:59.980 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:09:59.984 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:09:59.989 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 1.09 seconds (JVM running for 21920.381)
+2022-08-19 16:09:59.990 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:09:59.992 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:09:59.992 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:10:06.341 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:10:06.342 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:10:06.632 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:10:06.633 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:10:06.633 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:10:06.634 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:10:06.655 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:10:06.656 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 312 ms
+2022-08-19 16:10:07.123 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:10:07.134 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:10:07.137 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:10:07.142 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.829 seconds (JVM running for 21927.533)
+2022-08-19 16:10:07.144 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:10:07.144 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:10:07.145 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:10:47.455 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:10:47.455 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:10:47.755 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:10:47.756 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:10:47.756 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:10:47.756 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:10:47.778 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:10:47.778 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 321 ms
+2022-08-19 16:10:48.229 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:10:48.244 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:10:48.247 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:10:48.255 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.83 seconds (JVM running for 21968.647)
+2022-08-19 16:10:48.257 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:10:48.258 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:10:48.258 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:10:59.247 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:10:59.247 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:10:59.505 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:10:59.506 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:10:59.506 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:10:59.506 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:10:59.529 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:10:59.529 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 280 ms
+2022-08-19 16:11:00.044 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:11:00.057 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:11:00.060 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:11:00.069 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.85 seconds (JVM running for 21980.46)
+2022-08-19 16:11:00.071 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:11:00.072 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:11:00.072 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:16:32.862 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:16:32.862 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:16:33.151 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:16:33.151 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:33.152 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:16:33.152 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:16:33.173 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:16:33.174 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 310 ms
+2022-08-19 16:16:33.635 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:16:33.651 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:33.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:16:33.659 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.826 seconds (JVM running for 22314.051)
+2022-08-19 16:16:33.661 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:16:33.661 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:16:33.661 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:16:39.686 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:16:39.687 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:16:39.963 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:16:39.964 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:39.964 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:16:39.964 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:16:39.996 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:16:39.996 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 307 ms
+2022-08-19 16:16:40.616 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:16:40.632 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:40.636 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:16:40.644 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.987 seconds (JVM running for 22321.036)
+2022-08-19 16:16:40.646 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:16:40.647 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:16:40.647 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:16:56.639 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:16:56.640 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:16:56.901 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:16:56.902 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:56.902 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:16:56.903 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:16:56.925 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:16:56.925 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 283 ms
+2022-08-19 16:16:57.336 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:16:57.347 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:16:57.350 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:16:57.355 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.744 seconds (JVM running for 22337.746)
+2022-08-19 16:16:57.356 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:16:57.357 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:16:57.357 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:21:03.575 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:21:03.575 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:21:03.944 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:21:03.945 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:21:03.945 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:21:03.946 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:21:03.977 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:21:03.977 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 399 ms
+2022-08-19 16:21:04.536 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:21:04.550 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:21:04.553 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:21:04.562 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 1.02 seconds (JVM running for 22584.953)
+2022-08-19 16:21:04.564 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:21:04.564 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:21:04.564 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 16:21:19.636 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 12740 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-19 16:21:19.637 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-19 16:21:19.904 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-19 16:21:19.904 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:21:19.904 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-19 16:21:19.905 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-19 16:21:19.926 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-19 16:21:19.927 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 288 ms
+2022-08-19 16:21:20.444 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-19 16:21:20.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-19 16:21:20.461 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-19 16:21:20.465 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 0.86 seconds (JVM running for 22600.857)
+2022-08-19 16:21:20.467 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-19 16:21:20.467 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-19 16:21:20.467 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-19 18:01:50.590 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-19 18:01:50.592 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-08-19 18:01:50.594 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2022-08-19 18:01:50.623 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:01:50.624 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:01:50.624 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:01:50.624 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:01:50.627 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:01:50.641 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-08-19 18:01:50.681 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-08-19 18:01:50.682 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:01:50.683 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:01:50.687 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:01:50.688 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:01:50.688 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:01:50.689 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:01:50.690 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:01:50.691 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:01:50.692 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:01:50.692 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:01:50.693 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:01:50.693 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:01:50.694 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:01:50.694 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:01:50.695 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:01:50.695 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:01:50.706 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:01:50.707 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：85 ms -------------
+2022-08-19 18:01:57.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:01:57.742 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:01:57.743 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:01:57.743 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:01:57.744 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:01:57.749 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:01:57.750 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:01:57.752 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:01:57.753 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:01:57.754 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:01:57.755 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:01:57.755 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:01:57.757 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:01:57.758 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:01:57.758 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:01:57.759 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:01:57.760 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:01:57.761 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:01:57.761 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:01:57.762 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:01:57.762 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:01:57.764 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:01:57.764 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：23 ms -------------
+2022-08-19 18:02:02.227 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:02.227 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:02.228 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:02.228 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:02.229 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:02.231 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:02.232 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:02.234 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:02.234 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:02.235 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:02.236 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:02.236 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:02.237 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:02.238 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:02.238 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:02.238 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:02.239 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:02.239 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:02.239 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:02.240 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:02.240 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:02.241 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:02.241 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-19 18:02:21.411 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:21.411 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:21.412 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:21.413 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:21.413 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:21.415 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:21.415 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:21.416 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:21.417 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:21.417 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:21.418 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:21.418 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:21.419 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:21.420 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:21.421 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:21.422 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:21.422 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:21.422 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:21.423 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:21.423 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:21.423 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:21.429 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:21.429 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2022-08-19 18:02:26.335 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:26.335 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:26.336 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:26.336 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:26.337 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:26.339 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:26.340 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:26.341 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:26.342 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:26.342 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:26.342 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:26.343 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:26.344 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:26.344 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:26.345 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:26.345 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:26.346 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:26.346 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:26.347 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:26.348 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:26.348 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:26.348 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:26.349 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-19 18:02:40.553 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:40.553 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:40.554 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:40.554 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:40.555 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:40.557 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:40.557 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:40.559 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:40.559 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:40.560 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:40.561 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:40.561 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:40.562 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:40.563 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:40.563 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:40.563 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:40.563 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:40.563 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:40.563 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:40.564 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:40.564 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:40.565 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:40.565 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-19 18:02:44.139 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:44.140 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:44.140 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:44.141 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:44.141 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:44.143 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:44.144 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:44.145 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:44.146 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:44.146 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:44.147 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:44.148 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:44.150 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:44.150 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:44.151 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:44.151 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:44.152 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:44.152 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:44.153 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:44.154 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:44.154 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:44.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:44.155 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：16 ms -------------
+2022-08-19 18:02:56.256 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:02:56.256 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-19 18:02:56.257 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-19 18:02:56.257 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:02:56.258 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:02:56.260 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-19 18:02:56.261 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:02:56.262 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:02:56.263 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 5
+2022-08-19 18:02:56.263 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:02:56.265 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-19 18:02:56.266 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:02:56.268 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-19 18:02:56.269 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 353525, null, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-19 18:02:56.269 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原理, null, null, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-19 18:02:56.270 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:56.271 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-19 18:02:56.272 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215451886445268992, CSAPP, null, null, null, /image/OIP2.jpg, null, null, null
+2022-08-19 18:02:56.272 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:02:56.273 INFO  com.fanfanfan.wiki.service.EbookService           :38   [32m                  [0;39m 总行数：5
+2022-08-19 18:02:56.273 INFO  com.fanfanfan.wiki.service.EbookService           :39   [32m                  [0;39m 总页数：1
+2022-08-19 18:02:56.274 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":353525,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原理"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"},{"cover":"/image/OIP2.jpg","id":215451886445268992,"name":"CSAPP"}],"total":5},"success":true}
+2022-08-19 18:02:56.274 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2022-08-19 18:04:20.905 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:20.905 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:20.906 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:20.918 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:20.919 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:20.919 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:20.919 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:20.920 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:04:20.934 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:20.935 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:20.937 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:20.938 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:20.938 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:20.939 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?
+2022-08-19 18:04:20.940 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:04:20.941 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:20.941 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-19 18:04:20.941 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-19 18:04:20.942 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-19 18:04:20.942 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-19 18:04:20.942 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-19 18:04:20.943 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:04:20.943 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:20.943 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:20.951 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201}],"total":16},"success":true}
+2022-08-19 18:04:20.951 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2022-08-19 18:04:20.954 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：48 ms -------------
+2022-08-19 18:04:31.297 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:31.298 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:31.298 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:31.299 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:31.299 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:31.300 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:31.300 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:31.300 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":2,"size":5}]
+2022-08-19 18:04:31.302 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:31.303 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:31.304 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:31.304 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:31.305 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:31.305 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:04:31.306 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Long), 5(Integer)
+2022-08-19 18:04:31.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:31.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-19 18:04:31.308 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-19 18:04:31.308 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-19 18:04:31.308 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-19 18:04:31.309 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-19 18:04:31.309 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:04:31.309 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:31.310 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:31.310 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400}],"total":16},"success":true}
+2022-08-19 18:04:31.310 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-19 18:04:31.311 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
+2022-08-19 18:04:31.975 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:31.975 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:31.975 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:31.976 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:31.976 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:31.976 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:31.977 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:31.977 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":3,"size":5}]
+2022-08-19 18:04:31.978 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:31.979 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:31.980 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:31.980 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:31.980 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:31.981 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:04:31.981 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Long), 5(Integer)
+2022-08-19 18:04:31.982 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:31.983 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-19 18:04:31.983 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-19 18:04:31.984 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-19 18:04:31.984 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-19 18:04:31.985 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-19 18:04:31.985 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:04:31.985 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:31.986 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:31.986 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}],"total":16},"success":true}
+2022-08-19 18:04:31.987 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-19 18:04:31.987 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：11 ms -------------
+2022-08-19 18:04:32.597 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:32.597 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:32.598 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:32.598 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:32.598 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:32.599 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:32.599 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:32.599 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":4,"size":5}]
+2022-08-19 18:04:32.600 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:32.601 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:32.603 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:32.603 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:32.603 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:32.604 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:04:32.605 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 15(Long), 5(Integer)
+2022-08-19 18:04:32.606 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:32.606 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-19 18:04:32.608 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:32.608 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:32.609 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:32.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"total":16},"success":true}
+2022-08-19 18:04:32.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-19 18:04:32.613 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2022-08-19 18:04:36.266 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:36.266 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:36.267 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:36.268 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:36.268 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:36.269 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:36.269 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:36.270 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":3,"size":5}]
+2022-08-19 18:04:36.272 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:36.272 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:36.274 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:36.274 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:36.275 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:36.275 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:04:36.276 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Long), 5(Integer)
+2022-08-19 18:04:36.277 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:36.278 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-19 18:04:36.278 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-19 18:04:36.279 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-19 18:04:36.279 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-19 18:04:36.279 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-19 18:04:36.279 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:04:36.280 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:36.280 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:36.281 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}],"total":16},"success":true}
+2022-08-19 18:04:36.281 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-19 18:04:36.282 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2022-08-19 18:04:38.652 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:04:38.653 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:38.653 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:38.654 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:04:38.654 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:04:38.654 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:04:38.654 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:04:38.655 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":2,"size":5}]
+2022-08-19 18:04:38.657 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:04:38.657 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:04:38.658 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:04:38.659 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:04:38.659 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:04:38.660 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:04:38.660 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Long), 5(Integer)
+2022-08-19 18:04:38.662 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:04:38.662 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-19 18:04:38.662 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-19 18:04:38.663 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-19 18:04:38.663 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-19 18:04:38.664 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-19 18:04:38.664 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:04:38.664 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:04:38.665 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:04:38.665 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400}],"total":16},"success":true}
+2022-08-19 18:04:38.665 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-19 18:04:38.666 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
+2022-08-19 18:05:26.463 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:26.463 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/save OPTIONS
+2022-08-19 18:05:26.463 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:26.464 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2022-08-19 18:05:26.470 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:26.470 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/save POST
+2022-08-19 18:05:26.470 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:26.481 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:26.482 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/save POST
+2022-08-19 18:05:26.482 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.save
+2022-08-19 18:05:26.482 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:26.483 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"name":"阿里23春招上岸宝典","parent":600,"sort":601}]
+2022-08-19 18:05:26.489 DEBUG com.fanfanfan.wiki.mapper.CategoryMapper.insert   :137  [32m                  [0;39m ==>  Preparing: insert into category (id, parent, `name`, sort) values (?, ?, ?, ?)
+2022-08-19 18:05:26.490 DEBUG com.fanfanfan.wiki.mapper.CategoryMapper.insert   :137  [32m                  [0;39m ==> Parameters: 1239527930859520(Long), 600(Long), 阿里23春招上岸宝典(String), 601(Integer)
+2022-08-19 18:05:26.504 DEBUG com.fanfanfan.wiki.mapper.CategoryMapper.insert   :137  [32m                  [0;39m <==    Updates: 1
+2022-08-19 18:05:26.505 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"success":true}
+2022-08-19 18:05:26.505 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：24 ms -------------
+2022-08-19 18:05:26.506 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：35 ms -------------
+2022-08-19 18:05:26.541 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:26.541 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:26.541 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:26.542 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:26.543 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:26.543 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:26.543 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:26.543 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:05:26.545 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:26.545 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:26.546 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:26.546 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 17
+2022-08-19 18:05:26.547 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:26.547 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?
+2022-08-19 18:05:26.548 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:05:26.549 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:26.549 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-19 18:05:26.550 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-19 18:05:26.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-19 18:05:26.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-19 18:05:26.552 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-19 18:05:26.552 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:26.554 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：17
+2022-08-19 18:05:26.554 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:26.556 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201}],"total":17},"success":true}
+2022-08-19 18:05:26.556 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2022-08-19 18:05:26.558 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：17 ms -------------
+2022-08-19 18:05:29.609 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:29.609 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:29.609 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:29.610 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:29.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:29.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:29.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:29.611 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":4,"size":5}]
+2022-08-19 18:05:29.613 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:29.613 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:29.614 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:29.615 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 17
+2022-08-19 18:05:29.615 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:29.616 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:29.616 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 15(Long), 5(Integer)
+2022-08-19 18:05:29.618 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:29.618 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-19 18:05:29.619 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1239527930859520, 600, 阿里23春招上岸宝典, 601
+2022-08-19 18:05:29.619 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 2
+2022-08-19 18:05:29.620 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：17
+2022-08-19 18:05:29.621 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:29.622 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":503,"name":"热门服务端语言","parent":500,"sort":503},{"id":1239527930859520,"name":"阿里23春招上岸宝典","parent":600,"sort":601}],"total":17},"success":true}
+2022-08-19 18:05:29.622 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-19 18:05:29.624 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2022-08-19 18:05:35.806 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:35.806 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/save POST
+2022-08-19 18:05:35.806 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:35.807 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:35.807 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/save POST
+2022-08-19 18:05:35.808 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.save
+2022-08-19 18:05:35.808 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:35.808 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"id":1239527930859520,"name":"阿里23春招上岸宝典","parent":600,"sort":602}]
+2022-08-19 18:05:35.809 DEBUG c.f.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: update category set parent = ?, `name` = ?, sort = ? where id = ?
+2022-08-19 18:05:35.810 DEBUG c.f.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 600(Long), 阿里23春招上岸宝典(String), 602(Integer), 1239527930859520(Long)
+2022-08-19 18:05:35.815 DEBUG c.f.wiki.mapper.CategoryMapper.updateByPrimaryKey :137  [32m                  [0;39m <==    Updates: 1
+2022-08-19 18:05:35.816 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"success":true}
+2022-08-19 18:05:35.816 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2022-08-19 18:05:35.817 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：11 ms -------------
+2022-08-19 18:05:35.841 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:35.841 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:35.841 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:35.842 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:35.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:35.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:35.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:35.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:05:35.844 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:35.845 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:35.846 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:35.846 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 17
+2022-08-19 18:05:35.847 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:35.847 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?
+2022-08-19 18:05:35.848 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:05:35.849 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:35.850 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-19 18:05:35.850 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-19 18:05:35.850 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-19 18:05:35.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-19 18:05:35.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-19 18:05:35.851 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:35.852 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：17
+2022-08-19 18:05:35.852 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:35.853 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201}],"total":17},"success":true}
+2022-08-19 18:05:35.853 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-19 18:05:35.853 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：12 ms -------------
+2022-08-19 18:05:37.731 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:37.731 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:37.731 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:37.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:37.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:37.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:37.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:37.733 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":4,"size":5}]
+2022-08-19 18:05:37.734 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:37.734 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:37.735 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:37.736 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 17
+2022-08-19 18:05:37.736 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:37.737 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:37.737 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 15(Long), 5(Integer)
+2022-08-19 18:05:37.738 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:37.739 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-19 18:05:37.739 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1239527930859520, 600, 阿里23春招上岸宝典, 602
+2022-08-19 18:05:37.739 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 2
+2022-08-19 18:05:37.740 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：17
+2022-08-19 18:05:37.740 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:37.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":503,"name":"热门服务端语言","parent":500,"sort":503},{"id":1239527930859520,"name":"阿里23春招上岸宝典","parent":600,"sort":602}],"total":17},"success":true}
+2022-08-19 18:05:37.741 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2022-08-19 18:05:37.742 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：11 ms -------------
+2022-08-19 18:05:41.021 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:41.021 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/delete/1239527930859520 OPTIONS
+2022-08-19 18:05:41.022 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:41.022 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：0 ms -------------
+2022-08-19 18:05:41.024 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:41.025 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/delete/1239527930859520 DELETE
+2022-08-19 18:05:41.025 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:41.026 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:41.026 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/delete/1239527930859520 DELETE
+2022-08-19 18:05:41.027 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.delete
+2022-08-19 18:05:41.027 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:41.028 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [1239527930859520]
+2022-08-19 18:05:41.029 DEBUG c.f.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==>  Preparing: delete from category where id = ?
+2022-08-19 18:05:41.030 DEBUG c.f.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m ==> Parameters: 1239527930859520(Long)
+2022-08-19 18:05:41.043 DEBUG c.f.wiki.mapper.CategoryMapper.deleteByPrimaryKey :137  [32m                  [0;39m <==    Updates: 1
+2022-08-19 18:05:41.044 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"success":true}
+2022-08-19 18:05:41.045 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2022-08-19 18:05:41.046 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：21 ms -------------
+2022-08-19 18:05:41.068 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:41.069 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:41.069 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:41.069 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:41.070 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:41.070 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:41.070 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:41.070 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:05:41.071 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:41.072 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:41.073 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:41.073 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:41.074 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:41.074 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?
+2022-08-19 18:05:41.075 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:05:41.076 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:41.077 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-19 18:05:41.077 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-19 18:05:41.078 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-19 18:05:41.078 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-19 18:05:41.079 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-19 18:05:41.079 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:41.080 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:41.081 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:41.081 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201}],"total":16},"success":true}
+2022-08-19 18:05:41.081 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-19 18:05:41.082 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
+2022-08-19 18:05:42.847 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:42.847 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:42.847 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:42.848 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:42.849 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:42.849 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:42.849 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:42.850 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":4,"size":5}]
+2022-08-19 18:05:42.851 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:42.852 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:42.853 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:42.854 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:42.854 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:42.855 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:42.856 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 15(Long), 5(Integer)
+2022-08-19 18:05:42.857 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:42.858 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-19 18:05:42.858 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:42.859 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:42.859 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:42.859 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"total":16},"success":true}
+2022-08-19 18:05:42.859 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-19 18:05:42.860 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：12 ms -------------
+2022-08-19 18:05:50.280 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:50.281 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:50.281 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:50.282 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:50.283 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:50.284 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:50.284 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:50.284 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-19 18:05:50.286 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:50.287 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:50.288 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:50.288 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:50.289 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:50.289 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?
+2022-08-19 18:05:50.290 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-19 18:05:50.291 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:50.291 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-19 18:05:50.291 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-19 18:05:50.291 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-19 18:05:50.292 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-19 18:05:50.292 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-19 18:05:50.292 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:50.294 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:50.294 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:50.294 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201}],"total":16},"success":true}
+2022-08-19 18:05:50.294 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-19 18:05:50.295 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：13 ms -------------
+2022-08-19 18:05:56.556 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:56.557 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:56.557 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:56.557 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:56.558 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:56.558 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:56.558 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:56.558 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":2,"size":5}]
+2022-08-19 18:05:56.560 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:56.560 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:56.562 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:56.562 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:56.563 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:56.563 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:56.564 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 5(Long), 5(Integer)
+2022-08-19 18:05:56.565 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:56.566 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-19 18:05:56.566 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-19 18:05:56.566 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-19 18:05:56.572 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-19 18:05:56.572 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-19 18:05:56.573 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:56.573 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:56.574 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:56.574 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400}],"total":16},"success":true}
+2022-08-19 18:05:56.574 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2022-08-19 18:05:56.575 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：18 ms -------------
+2022-08-19 18:05:57.193 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:57.193 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:57.194 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:57.195 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:57.195 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:57.195 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:57.196 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:57.196 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":3,"size":5}]
+2022-08-19 18:05:57.198 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:57.199 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:57.200 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:57.201 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:57.201 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:57.202 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:57.203 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Long), 5(Integer)
+2022-08-19 18:05:57.205 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:57.205 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-19 18:05:57.206 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-19 18:05:57.206 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-19 18:05:57.207 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-19 18:05:57.207 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-19 18:05:57.207 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2022-08-19 18:05:57.208 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:57.208 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:57.208 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}],"total":16},"success":true}
+2022-08-19 18:05:57.208 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-19 18:05:57.209 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：15 ms -------------
+2022-08-19 18:05:59.273 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :20   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2022-08-19 18:05:59.274 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :21   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:59.274 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :22   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:59.275 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-19 18:05:59.275 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/list GET
+2022-08-19 18:05:59.275 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.list
+2022-08-19 18:05:59.276 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-19 18:05:59.276 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":4,"size":5}]
+2022-08-19 18:05:59.278 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM category
+2022-08-19 18:05:59.278 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-19 18:05:59.279 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-19 18:05:59.280 TRACE c.f.w.mapper.CategoryMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 16
+2022-08-19 18:05:59.280 DEBUG c.f.w.mapper.CategoryMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:59.281 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc LIMIT ?, ?
+2022-08-19 18:05:59.281 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 15(Long), 5(Integer)
+2022-08-19 18:05:59.282 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-19 18:05:59.283 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-19 18:05:59.283 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2022-08-19 18:05:59.283 INFO  com.fanfanfan.wiki.service.CategoryService        :47   [32m                  [0;39m 总行数：16
+2022-08-19 18:05:59.284 INFO  com.fanfanfan.wiki.service.CategoryService        :48   [32m                  [0;39m 总页数：4
+2022-08-19 18:05:59.284 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"total":16},"success":true}
+2022-08-19 18:05:59.284 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2022-08-19 18:05:59.285 INFO  com.fanfanfan.wiki.interceptor.LogInterceptor     :32   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：11 ms -------------
