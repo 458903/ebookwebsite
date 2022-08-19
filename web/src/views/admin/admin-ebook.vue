@@ -69,6 +69,7 @@
 <script lang="ts">
     import { defineComponent ,ref,onMounted,reactive} from 'vue';
     import axios from 'axios';
+    import { message } from 'ant-design-vue';
     interface FormState {
         username: string;
         password: string;
@@ -86,7 +87,7 @@
             const ebooks = ref();
             const pagination = ref({
                 current: 1,
-                pageSize: 10,
+                pageSize: 5,
                 total: 0
             });
             const loading = ref(false);
@@ -135,10 +136,14 @@
                     (response)=>{
                         loading.value=false;
                         const data=response.data;
-                        ebooks.value=data.content.list;
-                        //重置分页按钮
-                        pagination.value.current=params.page;
-                        pagination.value.total=data.content.total;
+                        if (data.success){
+                            ebooks.value=data.content.list;
+                            //重置分页按钮
+                            pagination.value.current=params.page;
+                            pagination.value.total=data.content.total;
+                        }else{
+                            message.error(data.message);
+                        }
                     });
             };
 
@@ -159,13 +164,15 @@
                 modalLoading.value=true;
                 axios.post("/ebook/save",ebook.value).then(
                     (response)=>{
+                        modalLoading.value=false;
                        const data=response.data;
                        if(data.success){
                            modalVisible.value=false;
-                           modalLoading.value=false;
                            handleQuery({
                                page:1,
                                size:pagination.value.pageSize});
+                       }else{
+                           message.error(data.message);
                        }
                        })
             }

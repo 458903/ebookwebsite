@@ -1,11 +1,10 @@
 package com.fanfanfan.wiki.controller;
 import com.fanfanfan.wiki.domain.Ebook;
-//import com.fanfanfan.wiki.rep.EbookQueryReq;
 import com.fanfanfan.wiki.rep.EbookQueryReq;
 import com.fanfanfan.wiki.rep.EbookSaveReq;
 import com.fanfanfan.wiki.resp.CommonResp;
 import com.fanfanfan.wiki.resp.EbookQueryResp;
-//import com.fanfanfan.wiki.resp.PageResp;
+import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.service.EbookService;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
-//import javax.validation.Valid;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/ebook")
@@ -23,7 +22,7 @@ public class EbookController {
     private EbookService ebookService;
     /*后端会有很多个接口，为了让前端统一处理逻辑（登录校验、权限校验），需要统一处理后端的返回值*/
     @GetMapping("/list")
-    public CommonResp list(EbookQueryReq rep){
+    public CommonResp list(@Valid EbookQueryReq rep){
 
         CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
         PageResp<EbookQueryResp> list=ebookService.list(rep);
