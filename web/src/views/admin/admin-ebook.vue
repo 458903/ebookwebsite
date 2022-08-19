@@ -3,6 +3,26 @@
         <a-layout-content
                 :style="{ background: '#D8BFD8', padding: '24px', margin: 0, minHeight: '280px' }"
         >
+            <p> <a-form
+                    layout="inline"
+                    :model="param">
+                <a-form-item>
+                    <a-input v-model:value="param.name" placeholder="名称">
+                        <template #prefix><UserOutlined style="color: rgba(0, 0, 0, 0.25)" /></template>
+                    </a-input>
+                </a-form-item>
+                <a-form-item>
+                    <a-button
+                            type="primary"
+                            html-type="submit"
+                            @click="handleQuery({
+                    page:1,
+                    size:pagination.pageSize})"
+                    >
+                        查询
+                    </a-button>
+                </a-form-item><!--查询按钮-->
+            </a-form></p>
             <!--列表内容-->
             <a-table
                     :columns="columns"
@@ -64,12 +84,13 @@
         </a-form-item>
     </a-form></p>
 
-    </a-modal>
+    </a-modal><!--弹出模态框-->
 </template>
 <script lang="ts">
     import { defineComponent ,ref,onMounted,reactive} from 'vue';
     import axios from 'axios';
     import { message } from 'ant-design-vue';
+    import { UserOutlined} from '@ant-design/icons-vue';
     interface FormState {
         username: string;
         password: string;
@@ -78,7 +99,7 @@
     export default defineComponent({
         name:'AdminEbook',
         components: {
-
+            UserOutlined,
         },
         setup() {
             const ebook = ref({});
@@ -123,14 +144,13 @@
                     slots: { customRender: 'action' }
                 }
             ];
-
-
             const handleQuery=(params: any)=>{
                 loading.value=true;
                 axios.get("/ebook/list",{
                     params:{
                         page:params.page,
-                        size:params.size
+                        size:params.size,
+                        name:param.value.name
                     }
                 }).then(
                     (response)=>{
@@ -214,6 +234,8 @@
                 handleModalOk,
                 modalLoading,
                 modalVisible,
+                handleQuery,
+                param,
             };
         },
     });
