@@ -31,26 +31,40 @@
                     :loading="loading"
                     @change="handleTableChange"
             >
+                <template #headerCell="{ column }">
+                    <template v-if="column.key === 'name'">
+                           <span><smile-outlined />
+                                 名称
+                           </span>
+                    </template>
+                </template>
+
+                <template #bodyCell="{ column, record }">
+                    <template v-if="column.key === 'name'">
+                        <a>
+                            {{ record.name }}
+                        </a>
+                    </template>
+                    <template v-else-if="column.key === 'action'">
+                        <a-space size="small">
+                            <a-button type="primary" @click="edit(record)">
+                                编辑
+                            </a-button>
+                            <a-popconfirm
+                                    title="是否确认删除?删除后不可恢复"
+                                    ok-text="删除"
+                                    cancel-text="否"
+                                    @confirm="del(record.id)">
+                                <a-button type="danger">
+                                    删除
+                                </a-button>
+                            </a-popconfirm>
+                        </a-space>
+                    </template>
+                </template>
                 <template #cover="{ text: cover }">
                     <img v-if="cover" :src="cover" alt="avatar" />
                 </template>
-
-                <template v-slot:action="{ text, record }">
-                    <a-space size="small">
-                        <a-button type="primary" @click="edit(record)">
-                            编辑
-                        </a-button>
-                        <a-popconfirm
-                                title="是否确认删除?删除后不可恢复"
-                                ok-text="删除"
-                                cancel-text="否"
-                                @confirm="del(record.id)">
-                            <a-button type="danger">
-                                删除
-                            </a-button>
-                        </a-popconfirm>
-                    </a-space>
-                </template><!--编辑和删除按钮-->
             </a-table>
             <div :style="{ padding: '26px 16px 16px' }">
                 <a-button ghost @click="add()">新增</a-button>
@@ -74,8 +88,8 @@
         <a-form-item label="分类一">
             <a-input v-model:value="ebook.category1Id" />
         </a-form-item>
-        <a-form-item label="分类二">
-            <a-input v-model:value="ebook.category2Id" />
+        <a-form-item label="文档数">
+            <a-input v-model:value="ebook.docCount" />
         </a-form-item>
         <a-form-item label="描述">
             <a-input v-model:value="ebook.description" type="textarea" />
@@ -85,20 +99,16 @@
     </a-modal><!--弹出模态框-->
 </template>
 <script lang="ts">
-    import { defineComponent ,ref,onMounted,reactive} from 'vue';
+    import { defineComponent ,ref,onMounted} from 'vue';
     import axios from 'axios';
     import { message } from 'ant-design-vue';
-    import { UserOutlined} from '@ant-design/icons-vue';
+    import { UserOutlined,SmileOutlined} from '@ant-design/icons-vue';
     import {Tool} from "@/util/tool";
-    interface FormState {
-        username: string;
-        password: string;
-        remember: boolean;
-    }
     export default defineComponent({
         name:'AdminEbook',
         components: {
             UserOutlined,
+            SmileOutlined,
         },
         /**
          * 页面渲染初始化方法
@@ -125,28 +135,32 @@
                 },
                 {
                     title: '名称',
-                    dataIndex: 'name'
+                    dataIndex: 'name',
+                    key: 'name',
                 },
                 {
                     title: '分类',
-                    slots: { customRender: 'category' }
+                    dataIndex:  'category'
                 },
                 {
                     title: '文档数',
-                    dataIndex: 'docCount'
+                    dataIndex: 'docCount',
+                    key: 'docCount',
                 },
                 {
                     title: '阅读数',
-                    dataIndex: 'viewCount'
+                    dataIndex: 'viewCount',
+                    key: 'viewCount',
                 },
                 {
                     title: '点赞数',
-                    dataIndex: 'voteCount'
+                    dataIndex: 'voteCount',
+                    key:'voteCount'
                 },
                 {
                     title: 'Action',
                     key: 'action',
-                    slots: { customRender: 'action' }
+                    dataIndex: 'action'
                 }
             ];
             /**
