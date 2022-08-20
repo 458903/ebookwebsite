@@ -183,6 +183,7 @@
              */
             const handleQuery=(params: any)=>{
                 loading.value=true;
+                ebook.value=[];
                 axios.get("/ebook/list",{
                     params:{
                         page:params.page,
