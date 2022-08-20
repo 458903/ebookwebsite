@@ -45,6 +45,15 @@
                             {{ record.name }}
                         </a>
                     </template>
+                    <template v-else-if="column.key === 'cover'">
+                        <img v-if="record.cover" :src="record.cover" alt="avatar" />
+                    </template>
+                    <template v-else-if="column.key === 'category'">
+                       <span>
+                         <!--  {{getCategoryName(record.category1Id)}}-->
+                           {{ getCategoryName(record.category1Id) }}/{{ getCategoryName(record.category2Id) }}
+                       </span>
+                    </template>
                     <template v-else-if="column.key === 'action'">
                         <a-space size="small">
                             <a-button type="primary" @click="edit(record)">
@@ -62,9 +71,7 @@
                         </a-space>
                     </template>
                 </template>
-                <template #cover="{ text: cover }">
-                    <img v-if="cover" :src="cover" alt="avatar" />
-                </template>
+
             </a-table>
             <div :style="{ padding: '26px 16px 16px' }">
                 <a-button ghost @click="add()">新增</a-button>
@@ -137,7 +144,8 @@
                 {
                     title: '封面',
                     dataIndex: 'cover',
-                    slots: { customRender: 'cover' }
+                    key: 'cover',
+
                 },
                 {
                     title: '名称',
@@ -146,7 +154,8 @@
                 },
                 {
                     title: '分类',
-                    dataIndex:  'category'
+                    dataIndex:  'category',
+                    key: 'category',
                 },
                 {
                     title: '文档数',
@@ -259,13 +268,14 @@
                     })
             };
             const level1=ref();
+            let categorys: any;
             const handlerQueryCategory=()=>{
                 loading.value=true;
                 axios.get("/category/all").then((response)=>{
                     loading.value=false;
                     const data=response.data;
                     if (data.success){
-                        const categorys=data.content;
+                        categorys=data.content;
                         console.log("原始数组:",categorys);
                         level1.value=[];
                         level1.value=Tool.array2Tree(categorys,0);
@@ -274,6 +284,15 @@
                         message.error(data.message);
                     }
                 })
+            }
+            const getCategoryName=(cid: number)=>{
+                let result="";
+                categorys.forEach((item: any)=>{
+                    if (item.id === cid){
+                        result=item.name;
+                    }
+                });
+                return  result;
             }
             /**
              * 生命周期钩子函数
@@ -301,6 +320,7 @@
                 modalVisible,
                 handleQuery,
                 param,
+                getCategoryName
             };
         },
     });
