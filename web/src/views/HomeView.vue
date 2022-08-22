@@ -2,48 +2,27 @@
   <a-layout>
   <a-layout-sider width="200" style="background: #F08080">
     <a-menu
-            v-model:selectedKeys="selectedKeys2"
-            v-model:openKeys="openKeys"
             mode="inline"
-            theme="dark"
             :style="{ height: '100%', borderRight: 0 }"
+            @click="handleClick"
+            :openKeys="openKeys"
+            theme="dark"
     >
-      <a-sub-menu key="sub1">
-        <template #title>
-              <span>
-                <user-outlined />
-                subnav 1
-              </span>
+      <a-menu-item key="welcome">
+        <MailOutlined />
+        <span>欢迎</span>
+      </a-menu-item>
+      <a-sub-menu v-for="item in level1" :key="item.id" >
+        <template v-slot:title>
+          <span><user-outlined />{{item.name}}</span>
         </template>
-        <a-menu-item key="1">option1</a-menu-item>
-        <a-menu-item key="2">option2</a-menu-item>
-        <a-menu-item key="3">option3</a-menu-item>
-        <a-menu-item key="4">option4</a-menu-item>
+        <a-menu-item v-for="child in item.children" :key="child.id">
+          <MailOutlined /><span>{{child.name}}</span>
+        </a-menu-item>
       </a-sub-menu>
-      <a-sub-menu key="sub2">
-        <template #title>
-              <span>
-                <laptop-outlined />
-                subnav 2
-              </span>
-        </template>
-        <a-menu-item key="5">option5</a-menu-item>
-        <a-menu-item key="6">option6</a-menu-item>
-        <a-menu-item key="7">option7</a-menu-item>
-        <a-menu-item key="8">option8</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub3">
-        <template #title>
-              <span>
-                <notification-outlined />
-                subnav 3
-              </span>
-        </template>
-        <a-menu-item key="9">option9</a-menu-item>
-        <a-menu-item key="10">option10</a-menu-item>
-        <a-menu-item key="11">option11</a-menu-item>
-        <a-menu-item key="12">option12</a-menu-item>
-      </a-sub-menu>
+      <a-menu-item key="tip" :disabled="true">
+        <span>以上菜单在分类管理配置</span>
+      </a-menu-item>
     </a-menu>
   </a-layout-sider>
   <a-layout-content
@@ -82,21 +61,11 @@
 
 <script lang="ts">
 import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons-vue';
-import { defineComponent ,onMounted,ref} from 'vue';
+import {  defineComponent, onMounted, ref,toRef} from 'vue';
 import axios from "axios";
+import { message } from 'ant-design-vue';
+import {Tool} from "@/util/tool";
 
-/*const listData: Record<string, string>[] = [];
-for (let i = 0; i < 23; i++) {
-  listData.push({
-    href: 'https://www.antdv.com/',
-    title: `ant design vue part ${i}`,
-    avatar: 'https://joeschmoe.io/api/v1/random',
-    description:
-            'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-            'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  });
-}*/
 export default defineComponent({
  name: 'HomeView',
   components: {
@@ -104,10 +73,66 @@ export default defineComponent({
     LikeOutlined,
     MessageOutlined,
   },
-setup(){//功能：通过axios调用电子书列表接口
-   //setup方法:vue3新增初始化方法
+setup(){
    console.log("setup");
    const ebook=ref();
+  const openKeys =  ref();
+  const level1 =  ref();
+  let categorys: any;
+  /**
+   * 查询所有分类
+   **/
+  const handleQueryCategory = () => {
+    axios.get("/category/all").then((response) => {
+      const data = response.data;
+      if (data.success) {
+        categorys = data.content;
+        console.log("原始数组：", categorys);
+
+        // 加载完分类后，将侧边栏全部展开
+        openKeys.value = [];
+    //    for (let i = 0; i < categorys.length; i++) {
+      //    openKeys.value.push(categorys[i].id)
+        //}
+
+        level1.value = [];
+        level1.value = Tool.array2Tree(categorys, 0);
+        console.log("树形结构：", level1.value);
+      } else {
+        message.error(data.message);
+      }
+    });
+  };
+
+  const isShowWelcome = ref(true);
+  let categoryId2 = 0;
+
+  const handleQueryEbook = () => {
+    axios.get("/ebook/list", {
+      params: {
+        page: 1,
+        size: 1000,
+        categoryId2: categoryId2
+      }
+    }).then((response) => {
+      const data = response.data;
+      ebook.value = data.content.list;
+      // ebooks1.books = data.content;
+    });
+  };
+
+  const handleClick = (value: any) => {
+          console.log("menu click", value)
+  /*  if (value.key === 'welcome') {
+      isShowWelcome.value = true;
+    } else {
+      categoryId2 = value.key;
+      isShowWelcome.value = false;
+      handleQueryEbook();
+    }*/
+    // isShowWelcome.value = value.key === 'welcome';
+  };
+
    const pagination = {
       onChange: (page: number) => {
         console.log(page);
@@ -117,32 +142,43 @@ setup(){//功能：通过axios调用电子书列表接口
     { type: 'LikeOutlined', text: '156' },
     { type: 'MessageOutlined', text: '2' },
   ];
-   onMounted( ()=> {//初始化的逻辑都写到生命周期函数onmOUTED里面，
- // setup就只用放一些参数定义、方法定义，尽量把初始化方法写到生命周期函数里面，免得界面渲染的时候报错
-     console.log("onMounted3443");
+
+
+   onMounted(
+           () => {
+             handleQueryCategory();
+             // handleQueryEbook();
+
+  //         ()=> {
+  //   console.log("onMounted3443");
     //如果不加上面这行代码，就会报错“ Cannot read properties of null (reading 'parentNode')”
-     axios.get("/ebook/list",{params:{
-       page:1,
+    axios.get("/ebook/list",{params:{
+      page:1,
          size:1000
        }}).then((response)=>{
                const data=response.data;
                ebook.value=data.content.list;});
-   })
+   }
+   )
     return {
       ebook,
       pagination,
       actions,
+      handleClick,
+      level1,
+      isShowWelcome,
+      openKeys
     }
  }
 
 });
 </script>
 <style scoped>
-  .ant-avatar{
-    margin: 5px 0;
+  .ant-avatar {
     width: 50px;
     height: 50px;
     line-height: 50px;
     border-radius: 8%;
+    margin: 5px 0;
   }
 </style>
