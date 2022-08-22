@@ -9,6 +9,7 @@
             theme="dark"
     >
       <a-menu-item key="welcome">
+
         <MailOutlined />
         <span>欢迎</span>
       </a-menu-item>
@@ -28,8 +29,11 @@
   <a-layout-content
           :style="{ background: '#D8BFD8', padding: '24px', margin: 0, minHeight: '280px' }"
   >
+    <div class="welcome" v-show="isShowWelcome">
+      <h1>欢迎使用魔笛手知识库</h1>
+    </div>
     <!--列表内容-->
-    <a-list item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebook">
+    <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{ gutter: 20, column: 3 }" :data-source="ebook">
       <template #footer>
         <div>
           <b>个人wiki百科</b>
@@ -122,14 +126,14 @@ setup(){
   };
 
   const handleClick = (value: any) => {
-          console.log("menu click", value)
-  /*  if (value.key === 'welcome') {
+         // console.log("menu click", value)
+ if (value.key === 'welcome') {
       isShowWelcome.value = true;
     } else {
       categoryId2 = value.key;
       isShowWelcome.value = false;
       handleQueryEbook();
-    }*/
+    }
     // isShowWelcome.value = value.key === 'welcome';
   };
 
