@@ -146,24 +146,7 @@ setup(){
     { type: 'LikeOutlined', text: '156' },
     { type: 'MessageOutlined', text: '2' },
   ];
-
-
-   onMounted(
-           () => {
-             handleQueryCategory();
-             // handleQueryEbook();
-
-  //         ()=> {
-  //   console.log("onMounted3443");
-    //如果不加上面这行代码，就会报错“ Cannot read properties of null (reading 'parentNode')”
-    axios.get("/ebook/list",{params:{
-      page:1,
-         size:1000
-       }}).then((response)=>{
-               const data=response.data;
-               ebook.value=data.content.list;});
-   }
-   )
+   onMounted(() => {handleQueryCategory();})
     return {
       ebook,
       pagination,

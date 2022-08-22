@@ -45,14 +45,24 @@ public class EbookQueryReq extends PageReq {
 package com.fanfanfan.wiki.rep;
 public class EbookQueryReq extends PageReq{
     private Long id;
+    private Long  categoryId2;
     private String name;
 
     @Override
     public String toString() {
         return "EbookQueryReq{" +
                 "id=" + id +
+                ", categoryId2=" + categoryId2 +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public Long getCategoryId2() {
+        return categoryId2;
+    }
+
+    public void setCategoryId2(Long categoryId2) {
+        this.categoryId2 = categoryId2;
     }
 
     public Long getId() {
