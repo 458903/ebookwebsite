@@ -134,7 +134,6 @@ setup(){
       isShowWelcome.value = false;
       handleQueryEbook();
     }
-    // isShowWelcome.value = value.key === 'welcome';
   };
 
    const pagination = {
