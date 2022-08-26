@@ -3,20 +3,25 @@
         <a-layout-content
                 :style="{ background: '#D8BFD8', padding: '24px', margin: 0, minHeight: '280px' }"
         >
-            <p> <a-form
+            <p><a-form
                     layout="inline"
                     :model="param">
 
                 <a-form-item>
+                    <a-space size="small">
                     <a-button
                             type="primary"
                             html-type="submit"
                             @click="handleQuery()"
-                    >
+                    ><template #icon><SearchOutlined /></template>
                         查询
                     </a-button>
+                        <router-link to="/admin/ebook">
+                            <a-button type="text">返回</a-button>
+                        </router-link>
+                    </a-space>
                 </a-form-item>
-            </a-form></p><!--查询按钮-->
+            </a-form></p><!--查询和返回按钮-->
             <a-table
                     :columns="columns"
                     :row-key="record => record.id"
@@ -26,12 +31,12 @@
             >
                 <template #headerCell="{ column }">
                     <template v-if="column.key === 'name'">
-                           <span><smile-outlined />
+                           <span>
+                               <smile-outlined />
                                  名称
                            </span>
                     </template>
                 </template>
-
                 <template #bodyCell="{ column, record }">
                     <template v-if="column.key === 'name'">
                         <a>
@@ -55,9 +60,6 @@
                         </a-space>
                     </template>
                 </template>
-                <template #cover="{ text: cover }">
-                    <img v-if="cover" :src="cover" alt="avatar" />
-                </template>
             </a-table>
             <div :style="{ padding: '26px 16px 16px' }">
                 <a-button ghost @click="add()">新增</a-button>
@@ -74,6 +76,19 @@
             <a-form :model="doc" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
                 <a-form-item label="名称">
                     <a-input v-model:value="doc.name" />
+                </a-form-item>
+                <a-form-item label="名称">
+                    <a-tree-select
+                            v-model:value="doc.parent"
+                            style="width: 100%"
+                            :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
+                            placeholder="请选择父文档"
+                            tree-default-expand-all
+                            :tree-data="level1"
+                            :fieldNames="{children:'children', label:'name', value: 'id',key:'id' }"
+                    >
+                        <template #suffixIcon><SmileOutlined /></template>
+                    </a-tree-select>
                 </a-form-item>
                 <a-form-item label="顺序">
                     <a-input v-model:value="doc.sort" />
@@ -96,14 +111,16 @@
     import { defineComponent ,ref,onMounted} from 'vue';
     import axios from 'axios';
     import { message } from 'ant-design-vue';
-    import { UserOutlined,SmileOutlined} from '@ant-design/icons-vue';
+    import { UserOutlined,SmileOutlined, SearchOutlined} from '@ant-design/icons-vue';
     import {Tool} from "@/util/tool";
     export default defineComponent({
         name:'AdminDoc',
         components: {
             UserOutlined,
             SmileOutlined,
+            SearchOutlined,
         },
+
         /**
          * 页面渲染初始化方法
          */

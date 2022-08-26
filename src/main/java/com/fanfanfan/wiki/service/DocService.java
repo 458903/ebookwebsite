@@ -1,8 +1,5 @@
 package com.fanfanfan.wiki.service;
 
-import com.fanfanfan.wiki.domain.Category;
-import com.fanfanfan.wiki.domain.CategoryExample;
-import com.fanfanfan.wiki.resp.CategoryQueryResp;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 //import com.fanfanfan.wiki.domain.Content;
