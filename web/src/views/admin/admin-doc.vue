@@ -103,6 +103,7 @@
     import { message } from 'ant-design-vue';
     import { UserOutlined,SmileOutlined, SearchOutlined} from '@ant-design/icons-vue';
     import {Tool} from "@/util/tool";
+    import {useRoute, useRouter} from "vue-router";
     export default defineComponent({
         name:'AdminDoc',
         components: {
@@ -115,6 +116,14 @@
          * 页面渲染初始化方法
          */
         setup() {
+            const route=useRoute();
+            console.log("路由：", route);
+            console.log("route.path：", route.path);
+            console.log("route.query：", route.query);
+            console.log("route.param：", route.params);
+            console.log("route.fullPath：", route.fullPath);
+            console.log("route.name：", route.name);
+            console.log("route.meta：", route.meta);
             const level1=ref();//level1就是一级文档树
             const doc = ref({});
             const param = ref();
@@ -229,7 +238,9 @@
              */
             const add=()=>{
                 modalVisible.value=true;//显示模态框
-                doc.value={};//模态框中的doc数据清空
+                doc.value={
+                    ebookId:route.query.ebookId,
+                };//模态框中的doc数据清空
                 treeSelectData.value=Tool.copy(level1.value);
                 //同样往数组前面添加一组‘无’
                 treeSelectData.value.unshift({id:'0',name:'无'});
