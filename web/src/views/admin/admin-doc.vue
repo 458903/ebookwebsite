@@ -77,31 +77,21 @@
                 <a-form-item label="名称">
                     <a-input v-model:value="doc.name" />
                 </a-form-item>
-                <a-form-item label="名称">
+                <a-form-item label="顺序">
+                    <a-input v-model:value="doc.sort" />
+                </a-form-item>
+                <a-form-item label="父分类">
                     <a-tree-select
                             v-model:value="doc.parent"
                             style="width: 100%"
                             :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
                             placeholder="请选择父文档"
                             tree-default-expand-all
-                            :tree-data="level1"
-                            :fieldNames="{children:'children', label:'name', value: 'id',key:'id' }"
+                            :tree-data="treeSelectData"
+                            :fieldNames="{ label:'name', value: 'id',key:'id' }"
                     >
                         <template #suffixIcon><SmileOutlined /></template>
                     </a-tree-select>
-                </a-form-item>
-                <a-form-item label="顺序">
-                    <a-input v-model:value="doc.sort" />
-                </a-form-item>
-                <a-form-item label="父分类">
-                    <a-select
-                            ref="select"
-                            v-model:value="doc.parent"
-                    >
-                        <a-select-option value="0">无</a-select-option>
-                        <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="doc.id === c.id">
-                            {{c.name}}</a-select-option>
-                    </a-select>
                 </a-form-item>
             </a-form></p>
 
@@ -125,7 +115,7 @@
          * 页面渲染初始化方法
          */
         setup() {
-            const level1=ref();
+            const level1=ref();//level1就是一级文档树
             const doc = ref({});
             const param = ref();
             param.value = {};
@@ -150,11 +140,15 @@
                     dataIndex: 'action'
                 }
             ];
+            const treeSelectData=ref();
+            treeSelectData.value=[];
+
             /**
              * 查询全部列表方法
              */
             const handleQuery=()=>{
                 loading.value=true;
+                level1.value=[];
                 axios.get("/doc/all").then(
                     (response)=>{
                         loading.value=false;
@@ -178,6 +172,7 @@
              */
             const handleModalOk=()=>{
                 modalLoading.value=true;
+                level1.value=[];
                 axios.post("/doc/save",doc.value).then(
                     (response)=>{
                         modalLoading.value=false;
@@ -191,18 +186,53 @@
                     })
             }
             /**
+             * 将某节点及其子孙节点全部置为disabled
+            * */
+            const setDisabled=(treeSelectData: any,id: any)=>{
+                //遍历数组：即遍历某一层节点
+                for (let i=0;i<treeSelectData.length;i++){
+                    const node=treeSelectData[i];
+                    if (node.id==id){
+                        console.log("disabled",node);
+                        node.disabled=true;
+                        const children=node.children;
+                        if (Tool.isNotEmpty(children)){
+                            for (let j=0;j<children.length;j++){
+                                setDisabled(children,children[j].id);
+                            }
+                        }
+                    }else{
+                        //如果当前节点不是目标节点，再到其子节点看看
+                        const children=node.children;
+                        if (Tool.isEmpty(children)){
+                            setDisabled(children,id);
+                        }
+                    }
+                }
+            }
+            /**
              * 编辑功能
              */
             const edit=(record:any)=>{
                 modalVisible.value=true;
                 doc.value=Tool.copy(record);
+                //不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
+                treeSelectData.value=Tool.copy(level1.value);
+                //为节点添加一个disabled:ture;就会使其变成不可选中
+                setDisabled(treeSelectData.value,record.id);
+                //为选择树添加一个“无”
+                treeSelectData.value.unshift({id:0,name:'无'});
+                //unshif:往数组的前面添加一个节点（push是往数组的后面添加一个元素）
             };
             /**
              * 新增功能
              */
             const add=()=>{
-                modalVisible.value=true;
-                doc.value={};
+                modalVisible.value=true;//显示模态框
+                doc.value={};//模态框中的doc数据清空
+                treeSelectData.value=Tool.copy(level1.value);
+                //同样往数组前面添加一组‘无’
+                treeSelectData.value.unshift({id:'0',name:'无'});
             };
             /**
              * 删除功能
@@ -234,6 +264,7 @@
                 modalVisible,
                 handleQuery,
                 param,
+                treeSelectData,
             };
         },
     });

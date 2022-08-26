@@ -138,6 +138,7 @@
              */
             const handleQuery=()=>{
                 loading.value=true;
+                level1.value=[];//编辑成功后清空现有数据，再重新查询
                 axios.get("/category/all").then(
                     (response)=>{
                         loading.value=false;
