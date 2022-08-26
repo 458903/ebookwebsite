@@ -93,29 +93,101 @@
                         <template #suffixIcon><SmileOutlined /></template>
                     </a-tree-select>
                 </a-form-item>
+                <a-form-item label="内容">
+                    <div style="border: 1px solid #ccc">
+                        <Toolbar
+                                style="border-bottom: 1px solid #ccc"
+                                :editor="editor"
+                                :defaultConfig="toolbarConfig"
+                                :mode="mode"
+                        />
+                        <Editor
+                                style="height: 100px; overflow-y: hidden;"
+                                v-model="valueHtml"
+                                :defaultConfig="editorConfig"
+                                :mode="mode"
+                                @onCreated="handleCreated"
+                                @onChange="handleChange"
+                                @onDestroyed="handleDestroyed"
+                                @onFocus="handleFocus"
+                                @onBlur="handleBlur"
+                                @customAlert="customAlert"
+                                @customPaste="customPaste"
+                        />
+                    </div>
+                </a-form-item>
             </a-form></p>
 
     </a-modal><!--弹出模态框-->
+
 </template>
 <script lang="ts">
-    import { defineComponent ,ref,onMounted} from 'vue';
+    import { defineComponent ,ref,onMounted,createVNode, onBeforeUnmount, shallowRef } from 'vue';
     import axios from 'axios';
     import { message } from 'ant-design-vue';
     import { UserOutlined,SmileOutlined, SearchOutlined} from '@ant-design/icons-vue';
     import {Tool} from "@/util/tool";
-    import {useRoute, useRouter} from "vue-router";
+    import {useRoute} from "vue-router";
+    import '@wangeditor/editor/dist/css/style.css'
+   import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
+  //  import ExclamationCircleOutlined from "@ant-design/icons-vue/ExclamationCircleOutlined";
     export default defineComponent({
         name:'AdminDoc',
         components: {
             UserOutlined,
             SmileOutlined,
             SearchOutlined,
+            Editor, Toolbar
         },
 
         /**
          * 页面渲染初始化方法
          */
         setup() {
+            // 编辑器实例，必须用 shallowRef
+            const editorRef = shallowRef()
+            // 内容 HTML
+            const valueHtml = ref('<p>hello</p>')
+            const toolbarConfig = {}
+            const editorConfig = { placeholder: '请输入内容...' }
+            /**
+             * 组件销毁时，也及时销毁编辑器
+             */
+            onBeforeUnmount(() => {
+                const editor = editorRef.value
+                if (editor == null) return
+                editor.destroy()
+            });
+            // 编辑器回调函数
+            const handleCreated = (editor: any) => {
+                console.log('created', editor);
+                editorRef.value = editor; // 记录 editor 实例，重要！
+            };
+            const handleChange = (editor: { getHtml: () => any; }) => {
+                console.log('change:', editor.getHtml());
+            };
+            const handleDestroyed = (editor: any) => {
+                console.log('destroyed', editor);
+            };
+            const handleFocus = (editor: any) => {
+                console.log('focus', editor);
+            };
+            const handleBlur = (editor: any) => {
+                console.log('blur', editor);
+            };
+            const customAlert = (info: any, type: any) => {
+                alert(`【自定义提示】${type} - ${info}`);
+            };
+            const customPaste = (editor: { insertText: (arg0: string) => void; }, event: any, callback: (arg0: boolean) => void) => {
+                console.log('ClipboardEvent 粘贴事件对象', event);
+                // 自定义插入内容
+                editor.insertText('xxx');
+                // 返回值（注意，vue 事件的返回值，不能用 return）
+                callback(false); // 返回 false ，阻止默认粘贴行为
+                // callback(true) // 返回 true ，继续默认的粘贴行为
+            };
+
+
             const route=useRoute();
             console.log("路由：", route);
             console.log("route.path：", route.path);
@@ -125,7 +197,7 @@
             console.log("route.name：", route.name);
             console.log("route.meta：", route.meta);
             const level1=ref();//level1就是一级文档树
-            const doc = ref({});
+            const doc = ref();
             const param = ref();
             param.value = {};
             const docs = ref();
@@ -176,6 +248,7 @@
 
             const modalVisible=ref(false);
             const modalLoading=ref(false);
+
             /**
              * 保存功能：模态框弹出时执行
              */
@@ -196,29 +269,82 @@
             }
             /**
              * 将某节点及其子孙节点全部置为disabled
-            * */
-            const setDisabled=(treeSelectData: any,id: any)=>{
-                //遍历数组：即遍历某一层节点
-                for (let i=0;i<treeSelectData.length;i++){
-                    const node=treeSelectData[i];
-                    if (node.id==id){
-                        console.log("disabled",node);
-                        node.disabled=true;
-                        const children=node.children;
-                        if (Tool.isNotEmpty(children)){
-                            for (let j=0;j<children.length;j++){
-                                setDisabled(children,children[j].id);
+             */
+            const setDisabled = (treeSelectData: any, id: any) => {
+                // console.log(treeSelectData, id);
+                // 遍历数组，即遍历某一层节点
+                for (let i = 0; i < treeSelectData.length; i++) {
+                    const node = treeSelectData[i];
+                    if (node.id === id) {
+                        // 如果当前节点就是目标节点
+                        console.log("disabled", node);
+                        // 将目标节点设置为disabled
+                        node.disabled = true;
+
+                        // 遍历所有子节点，将所有子节点全部都加上disabled
+                        const children = node.children;
+                        if (Tool.isNotEmpty(children)) {
+                            for (let j = 0; j < children.length; j++) {
+                                setDisabled(children, children[j].id)
                             }
                         }
-                    }else{
-                        //如果当前节点不是目标节点，再到其子节点看看
-                        const children=node.children;
-                        if (Tool.isEmpty(children)){
-                            setDisabled(children,id);
+                    } else {
+                        // 如果当前节点不是目标节点，则到其子节点再找找看。
+                        const children = node.children;
+                        if (Tool.isNotEmpty(children)) {
+                            setDisabled(children, id);
                         }
                     }
                 }
-            }
+            };
+
+            const deleteIds: Array<string> = [];
+            const deleteNames: Array<string> = [];
+            /**
+             * 查找整根树枝
+             */
+            const getDeleteIds = (treeSelectData: any, id: any) => {
+                // console.log(treeSelectData, id);
+                // 遍历数组，即遍历某一层节点
+                for (let i = 0; i < treeSelectData.length; i++) {
+                    const node = treeSelectData[i];
+                    if (node.id === id) {
+                        // 如果当前节点就是目标节点
+                        console.log("delete", node);
+                        // 将目标ID放入结果集ids
+                        // node.disabled = true;
+                        deleteIds.push(id);
+                        deleteNames.push(node.name);
+
+                        // 遍历所有子节点
+                        const children = node.children;
+                        if (Tool.isNotEmpty(children)) {
+                            for (let j = 0; j < children.length; j++) {
+                                getDeleteIds(children, children[j].id)
+                            }
+                        }
+                    } else {
+                        // 如果当前节点不是目标节点，则到其子节点再找找看。
+                        const children = node.children;
+                        if (Tool.isNotEmpty(children)) {
+                            getDeleteIds(children, id);
+                        }
+                    }
+                }
+            };
+            /**
+             * 内容查询
+             **/
+            const handleQueryContent = () => {
+                axios.get("/doc/find-content/" + doc.value.id).then((response) => {
+                    const data = response.data;
+                    if (data.success) {
+                     //   editor.txt.html(data.content)
+                    } else {
+                        message.error(data.message);
+                    }
+                });
+            };
             /**
              * 编辑功能
              */
@@ -248,21 +374,55 @@
             /**
              * 删除功能
              */
-            const del=(id: number)=>{
-                axios.delete("/doc/delete/"+id).then((response)=>{
-                    const data=response.data;
-                    if(data.success){
-                        handleQuery();
-                    }
-                })
+            const del = (id: number) => {
+                // 清空数组，否则多次删除时，数组会一直增加
+                deleteIds.length = 0;
+                deleteNames.length = 0;
+                getDeleteIds(level1.value, id);
+                /*   Modal.confirm({
+                 title: '重要提醒',
+                    icon: createVNode(ExclamationCircleOutlined),
+                    content: '将删除：【' + deleteNames.join("，") + "】删除后不可恢复，确认删除？",
+                    onOk() {
+                       */
+                        axios.delete("/doc/delete/" + deleteIds.join(",")).then((response) => {
+                            const data = response.data; // data = commonResp
+                            if (data.success) {
+                                // 重新加载列表
+                                handleQuery();
+                            } else {
+                                message.error(data.message);
+                            }
+                });
             };
+
             /**
              * 生命周期钩子函数
              */
             onMounted(()=>{
                 handleQuery();
+                setTimeout(() => {
+                    valueHtml.value = '<p>请输入文档内容</p>'
+                }, 1500);
             });
+
+
+
+
             return {
+                editorRef,
+                valueHtml,
+                mode: 'default', // 或 'simple'
+                toolbarConfig,
+                editorConfig,
+                handleCreated,
+                handleChange,
+                handleDestroyed,
+                handleFocus,
+                handleBlur,
+                customAlert,
+                customPaste,
+                handleQueryContent,
                 columns,
                 doc,
                 loading,

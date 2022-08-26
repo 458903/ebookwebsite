@@ -5,8 +5,6 @@ import com.github.pagehelper.PageInfo;
 //import com.fanfanfan.wiki.domain.Content;
 import com.fanfanfan.wiki.domain.Doc;
 import com.fanfanfan.wiki.domain.DocExample;
-import com.fanfanfan.wiki.exception.BusinessException;
-import com.fanfanfan.wiki.exception.BusinessExceptionCode;
 //import com.fanfanfan.wiki.mapper.ContentMapper;
 import com.fanfanfan.wiki.mapper.DocMapper;
 //import com.fanfanfan.wiki.mapper.DocMapperCust;
@@ -16,11 +14,9 @@ import com.fanfanfan.wiki.resp.DocQueryResp;
 import com.fanfanfan.wiki.resp.PageResp;
 import com.fanfanfan.wiki.util.CopyUtil;
 //import com.fanfanfan.wiki.util.RedisUtil;
-import com.fanfanfan.wiki.util.RequestContext;
 import com.fanfanfan.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
@@ -124,7 +120,7 @@ public class DocService {
     public void delete(List<String> ids) {
         DocExample docExample = new DocExample();
         DocExample.Criteria criteria = docExample.createCriteria();
-     //   criteria.andIdIn(ids);
+        criteria.andIdIn(ids);
         docMapper.deleteByExample(docExample);
     }
 /*

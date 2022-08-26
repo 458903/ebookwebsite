@@ -40,11 +40,8 @@
                              targetPackage="com.fanfanfan.wiki.mapper"
                              type="XMLMAPPER"/>
 
-      <!-- <table tableName="demo" domainObjectName="Demo"/>-->
-       <!-- <table tableName="ebook"/>-->
 
-        <table tableName="doc"/>
-        <!--<table tableName="content"/>-->
+
         <!--<table tableName="user"/>-->
         <!---->
     </context>
