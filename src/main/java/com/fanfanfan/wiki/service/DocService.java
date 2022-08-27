@@ -1,8 +1,9 @@
 package com.fanfanfan.wiki.service;
 
+import com.fanfanfan.wiki.mapper.ContentMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-//import com.fanfanfan.wiki.domain.Content;
+import com.fanfanfan.wiki.domain.Content;
 import com.fanfanfan.wiki.domain.Doc;
 import com.fanfanfan.wiki.domain.DocExample;
 //import com.fanfanfan.wiki.mapper.ContentMapper;
@@ -32,11 +33,11 @@ public class DocService {
     @Resource
     private DocMapper docMapper;
 
-  /*  @Resource
-    private DocMapperCust docMapperCust;
+   //  @Resource
+ //   private DocMapperCust docMapperCust;
 
     @Resource
-    private ContentMapper contentMapper;*/
+    private ContentMapper contentMapper;
 
     @Resource
     private SnowFlake snowFlake;
@@ -50,16 +51,9 @@ public class DocService {
     // @Resource
     // private RocketMQTemplate rocketMQTemplate;
 
-    public List<DocQueryResp> all() {
-      /*  DocExample docExample = new DocExample();
-        docExample.createCriteria().andEbookIdEqualTo(ebookId);
-        docExample.setOrderByClause("sort asc");
-        List<Doc> docList = docMapper.selectByExample(docExample);
-        // 列表复制
-        List<DocQueryResp> list = CopyUtil.copyList(docList, DocQueryResp.class);
-
-        return list;*/
+    public List<DocQueryResp> all(Long ebookId) {
        DocExample docExample = new DocExample();
+        docExample.createCriteria().andEbookIdEqualTo(ebookId);
         docExample.setOrderByClause("sort asc");
         List<Doc> docList = docMapper.selectByExample(docExample);
         // 列表复制
@@ -93,23 +87,22 @@ public class DocService {
   @Transactional
     public void save(DocSaveReq req) {
         Doc doc = CopyUtil.copy(req, Doc.class);
-      //  Content content = CopyUtil.copy(req, Content.class);
+       Content content = CopyUtil.copy(req, Content.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
             doc.setId(snowFlake.nextId());
             doc.setViewCount(0);
             doc.setVoteCount(0);
             docMapper.insert(doc);
-
-      /*      content.setId(doc.getId());
-            contentMapper.insert(content);*/
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         } else {
             // 更新
             docMapper.updateByPrimaryKey(doc);
-          //  int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
-         /*   if (count == 0) {
-                contentMapper.insert(content);
-            }*/
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (count == 0) {
+            contentMapper.insert(content);
+            }
         }
     }
 
@@ -123,11 +116,11 @@ public class DocService {
         criteria.andIdIn(ids);
         docMapper.deleteByExample(docExample);
     }
-/*
+
     public String findContent(Long id) {
         Content content = contentMapper.selectByPrimaryKey(id);
         // 文档阅读数+1
-        docMapperCust.increaseViewCount(id);
+     //   docMapperCust.increaseViewCount(id);
         if (ObjectUtils.isEmpty(content)) {
             return "";
         } else {
@@ -135,7 +128,7 @@ public class DocService {
         }
     }
 
-    *//**
+   /**
      * 点赞
      *//*
     public void vote(Long id) {

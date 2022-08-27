@@ -3,122 +3,140 @@
         <a-layout-content
                 :style="{ background: '#D8BFD8', padding: '24px', margin: 0, minHeight: '280px' }"
         >
-            <p><a-form
-                    layout="inline"
-                    :model="param">
+            <a-row :gutter="24">
+                <a-col :span="12">
+                    <p>
+                        <a-form
+                            layout="inline"
+                            :model="param">
 
-                <a-form-item>
-                    <a-space size="small">
-                    <a-button
-                            type="primary"
-                            html-type="submit"
-                            @click="handleQuery()"
-                    ><template #icon><SearchOutlined /></template>
-                        查询
-                    </a-button>
-                        <router-link to="/admin/ebook">
-                            <a-button type="text">返回</a-button>
-                        </router-link>
-                    </a-space>
-                </a-form-item>
-            </a-form></p><!--查询和返回按钮-->
-            <a-table
-                    :columns="columns"
-                    :row-key="record => record.id"
-                    :data-source="level1"
-                    :loading="loading"
-                    :pagination="false"
-            >
-                <template #headerCell="{ column }">
-                    <template v-if="column.key === 'name'">
+                        <a-form-item>
+                            <a-space size="small">
+                                <a-button
+                                        type="primary"
+                                        html-type="submit"
+                                        @click="handleQuery()"
+                                ><template #icon><SearchOutlined /></template>
+                                    查询
+                                </a-button>
+                                <router-link to="/admin/ebook">
+                                    <a-button type="text">返回</a-button>
+                                </router-link>
+                            </a-space>
+                        </a-form-item>
+                    </a-form>
+                    </p><!--查询和返回按钮-->
+                    <a-table
+                            :v-if="level1.length>0"
+                            :columns="columns"
+                            :row-key="record => record.id"
+                            :data-source="level1"
+                            :loading="loading"
+                            :pagination="false"
+                            size="small"
+                            :default-expand-all-rows="true"
+                    >
+                        <template #headerCell="{ column }">
+                            <template v-if="column.key === 'name'">
                            <span>
                                <smile-outlined />
                                  名称
                            </span>
-                    </template>
-                </template>
-                <template #bodyCell="{ column, record }">
-                    <template v-if="column.key === 'name'">
-                        <a>
-                            {{ record.name }}
-                        </a>
-                    </template>
-                    <template v-else-if="column.key === 'action'">
-                        <a-space size="small">
-                            <a-button type="primary" @click="edit(record)">
-                                编辑
+                            </template>
+                        </template>
+                        <template #bodyCell="{ column, record }">
+                            <template v-if="column.key === 'name'">
+                                <a>
+                                    {{ record.name }}
+                                </a>
+                            </template>
+                            <template v-else-if="column.key === 'action'">
+                                <a-space size="small">
+                                    <a-button type="primary" @click="edit(record)" size="small">
+                                        编辑
+                                    </a-button>
+                                    <a-popconfirm
+                                            title="是否确认删除?删除后不可恢复"
+                                            ok-text="删除"
+                                            cancel-text="否"
+                                            @confirm="del(record.id)">
+                                        <a-button type="danger" size="small">
+                                            删除
+                                        </a-button>
+                                    </a-popconfirm>
+                                </a-space>
+                            </template>
+                        </template>
+                    </a-table>
+                </a-col>
+                <a-col :span="12">
+                    <a-form :model="doc" layout="vertical">
+                        <a-form-item>
+                        <div style="border: 1px solid #FFE4B5; margin-top: 10px">
+                           <Toolbar
+                                        :editor="editorRef"
+                                        :defaultConfig="toolbarConfig"
+                                        :mode="mode"
+                                        style="border-bottom: 1px solid #FFE4B5"
+                            />
+                           <Editor
+                                        :defaultConfig="editorConfig"
+                                        :mode="mode"
+                                        v-model="valueHtml"
+                                        style="height: 200px; overflow-y: hidden"
+                                        @onCreated="handleCreated"
+                                        @onChange="handleChange"
+                                        @onDestroyed="handleDestroyed"
+                                        @onFocus="handleFocus"
+                                        @onBlur="handleBlur"
+                                        @customAlert="customAlert"
+                                        @customPaste="customPaste"
+                                />
+                            </div>
+                        </a-form-item>
+                        <a-form-item label="文档名">
+                            <a-input v-model:value="doc.name" />
+                        </a-form-item>
+                      <a-form-item label="顺序">
+                           <a-input v-model:value="doc.sort" />
+                       </a-form-item>
+                       <a-form-item label="父分类">
+                           <a-tree-select
+                                   v-model:value="doc.parent"
+                                   style="width: 100%"
+                                   :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
+                                   placeholder="请选择父文档"
+                                   tree-default-expand-all
+                                   :tree-data="treeSelectData"
+                                   :fieldNames="{ label:'name', value: 'id',key:'id' }"
+                           >
+                               <template #suffixIcon><SmileOutlined /></template>
+                           </a-tree-select>
+                       </a-form-item>
+                        <a-form-item>
+                            <a-button type="primary" @click="handlePreviewContent()">
+                                <EyeOutlined /> 内容预览
                             </a-button>
-                            <a-popconfirm
-                                    title="是否确认删除?删除后不可恢复"
-                                    ok-text="删除"
-                                    cancel-text="否"
-                                    @confirm="del(record.id)">
-                                <a-button type="danger">
-                                    删除
-                                </a-button>
-                            </a-popconfirm>
-                        </a-space>
-                    </template>
-                </template>
-            </a-table>
+                        </a-form-item>
+                    </a-form>
+                </a-col>
+            </a-row>
             <div :style="{ padding: '26px 16px 16px' }">
+                <a-form layout="inline" :model="param">
+                    <a-form-item>
+                        <a-button type="primary" @click="handleModalOk()">
+                            保存
+                        </a-button>
+                    </a-form-item>
+                </a-form>
                 <a-button ghost @click="add()">新增</a-button>
             </div><!--新增按钮-->
+            <a-drawer width="900" placement="right" :closable="false" :visible="drawerVisible" @close="onDrawerClose">
+                <div class="editor-content-view" :innerHTML="previewHtml"></div>
+            </a-drawer>
         </a-layout-content>
     </a-layout>
-    <a-modal
-            v-model:visible="modalVisible"
-            title="分类表单"
-            :confirm-loading="modalLoading"
-            @ok="handleModalOk"
-    >
-        <p>
-            <a-form :model="doc" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-                <a-form-item label="名称">
-                    <a-input v-model:value="doc.name" />
-                </a-form-item>
-                <a-form-item label="顺序">
-                    <a-input v-model:value="doc.sort" />
-                </a-form-item>
-                <a-form-item label="父分类">
-                    <a-tree-select
-                            v-model:value="doc.parent"
-                            style="width: 100%"
-                            :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
-                            placeholder="请选择父文档"
-                            tree-default-expand-all
-                            :tree-data="treeSelectData"
-                            :fieldNames="{ label:'name', value: 'id',key:'id' }"
-                    >
-                        <template #suffixIcon><SmileOutlined /></template>
-                    </a-tree-select>
-                </a-form-item>
-                <a-form-item label="内容">
-                    <div style="border: 1px solid #ccc">
-                        <Toolbar
-                                style="border-bottom: 1px solid #ccc"
-                                :editor="editor"
-                                :defaultConfig="toolbarConfig"
-                                :mode="mode"
-                        />
-                        <Editor
-                                style="height: 100px; overflow-y: hidden;"
-                                v-model="valueHtml"
-                                :defaultConfig="editorConfig"
-                                :mode="mode"
-                                @onCreated="handleCreated"
-                                @onChange="handleChange"
-                                @onDestroyed="handleDestroyed"
-                                @onFocus="handleFocus"
-                                @onBlur="handleBlur"
-                                @customAlert="customAlert"
-                                @customPaste="customPaste"
-                        />
-                    </div>
-                </a-form-item>
-            </a-form></p>
 
-    </a-modal><!--弹出模态框-->
 
 </template>
 <script lang="ts">
@@ -130,7 +148,6 @@
     import {useRoute} from "vue-router";
     import '@wangeditor/editor/dist/css/style.css'
    import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
-  //  import ExclamationCircleOutlined from "@ant-design/icons-vue/ExclamationCircleOutlined";
     export default defineComponent({
         name:'AdminDoc',
         components: {
@@ -147,6 +164,7 @@
             // 编辑器实例，必须用 shallowRef
             const editorRef = shallowRef()
             // 内容 HTML
+            const editor = editorRef.value;
             const valueHtml = ref('<p>hello</p>')
             const toolbarConfig = {}
             const editorConfig = { placeholder: '请输入内容...' }
@@ -154,7 +172,7 @@
              * 组件销毁时，也及时销毁编辑器
              */
             onBeforeUnmount(() => {
-                const editor = editorRef.value
+                const editor = editorRef.value;
                 if (editor == null) return
                 editor.destroy()
             });
@@ -197,7 +215,9 @@
             console.log("route.name：", route.name);
             console.log("route.meta：", route.meta);
             const level1=ref();//level1就是一级文档树
+            level1.value=[];//新增初始化
             const doc = ref();
+             doc.value={};//初始化
             const param = ref();
             param.value = {};
             const docs = ref();
@@ -211,10 +231,6 @@
                     title: '父分类',
                     dataIndex: 'parent',
                     key: 'parent',
-                },{
-                    title: '顺序',
-                    dataIndex: 'sort',
-                    key: 'sort',
                 }, {
                     title: 'Action',
                     key: 'action',
@@ -230,7 +246,7 @@
             const handleQuery=()=>{
                 loading.value=true;
                 level1.value=[];
-                axios.get("/doc/all").then(
+                axios.get("/doc/all/" + route.query.ebookId).then(
                     (response)=>{
                         loading.value=false;
                         const data=response.data;
@@ -250,11 +266,12 @@
             const modalLoading=ref(false);
 
             /**
-             * 保存功能：模态框弹出时执行
+             * 保存功能
              */
             const handleModalOk=()=>{
                 modalLoading.value=true;
                 level1.value=[];
+                doc.value.content= editor.getHtml();
                 axios.post("/doc/save",doc.value).then(
                     (response)=>{
                         modalLoading.value=false;
@@ -266,7 +283,8 @@
                             message.error(data.message);
                         }
                     })
-            }
+            };
+
             /**
              * 将某节点及其子孙节点全部置为disabled
              */
@@ -335,11 +353,11 @@
             /**
              * 内容查询
              **/
-            const handleQueryContent = () => {
+            const handleContent = () => {
                 axios.get("/doc/find-content/" + doc.value.id).then((response) => {
                     const data = response.data;
                     if (data.success) {
-                     //   editor.txt.html(data.content)
+                        editor.getHtml(data.content);
                     } else {
                         message.error(data.message);
                     }
@@ -349,8 +367,10 @@
              * 编辑功能
              */
             const edit=(record:any)=>{
+                editor.getHtml("");
                 modalVisible.value=true;
                 doc.value=Tool.copy(record);
+                handleContent();
                 //不能选择当前节点及其所有子孙节点，作为父节点，会使树断开
                 treeSelectData.value=Tool.copy(level1.value);
                 //为节点添加一个disabled:ture;就会使其变成不可选中
@@ -363,6 +383,7 @@
              * 新增功能
              */
             const add=()=>{
+                editor.getHtml("");
                 modalVisible.value=true;//显示模态框
                 doc.value={
                     ebookId:route.query.ebookId,
@@ -395,24 +416,37 @@
                             }
                 });
             };
+            // ----------------富文本预览--------------
+            const drawerVisible = ref(false);
+            const previewHtml = ref();
+            const handlePreviewContent = () => {
+                const html = editor.getHtml();
+                previewHtml.value = html;
+                drawerVisible.value = true;
+            };
+            const onDrawerClose = () => {
+                drawerVisible.value = false;
+            };
 
             /**
              * 生命周期钩子函数
              */
             onMounted(()=>{
                 handleQuery();
-                setTimeout(() => {
-                    valueHtml.value = '<p>请输入文档内容</p>'
-                }, 1500);
             });
 
 
 
 
             return {
+                drawerVisible,
+                previewHtml,
+                onDrawerClose,
+                handlePreviewContent,
+                editor,
                 editorRef,
                 valueHtml,
-                mode: 'default', // 或 'simple'
+                mode: 'default',
                 toolbarConfig,
                 editorConfig,
                 handleCreated,
@@ -422,7 +456,7 @@
                 handleBlur,
                 customAlert,
                 customPaste,
-                handleQueryContent,
+                handleContent,
                 columns,
                 doc,
                 loading,
@@ -441,8 +475,53 @@
     });
 </script>
 
-<style scoped>
+
+<style>
     img {
         width: 50px;
         height: 50px;}
+    .editor-content-view p,
+    .editor-content-view li {
+        white-space: pre-wrap; /* 保留空格 */
+    }
+
+    .editor-content-view blockquote {
+        border-left: 8px solid #d0e5f2;
+        padding: 10px 10px;
+        margin: 10px 0;
+        background-color: #f1f1f1;
+    }
+
+    .editor-content-view code {
+        font-family: monospace;
+        background-color: #eee;
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .editor-content-view pre>code {
+        display: block;
+        padding: 10px;
+    }
+
+    .editor-content-view table {
+        border-collapse: collapse;
+    }
+    .editor-content-view td,
+    .editor-content-view th {
+        border: 1px solid #ccc;
+        min-width: 50px;
+        height: 20px;
+    }
+    .editor-content-view th {
+        background-color: #f1f1f1;
+    }
+
+    .editor-content-view ul,
+    .editor-content-view ol {
+        padding-left: 20px;
+    }
+
+    .editor-content-view input[type="checkbox"] {
+        margin-right: 5px;
+    }
 </style>
