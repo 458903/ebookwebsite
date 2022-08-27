@@ -3602,3 +3602,404 @@ Caused by: java.lang.ClassNotFoundException: com.fanfanfan.wiki.service.DocServi
 2022-08-27 19:52:54.660 DEBUG c.fanfanfan.wiki.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 0
 2022-08-27 19:52:54.661 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[],"success":true}
 2022-08-27 19:52:54.661 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2022-08-27 19:55:08.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:08.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:08.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:08.732 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:08.733 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:08.734 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:08.735 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:08.736 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:08.736 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:08.737 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:08.737 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:08.737 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:08.737 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:08.738 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:08.738 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:08.738 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:08.738 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:08.739 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:08.739 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:08.739 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:08.740 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:08.740 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:08.740 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:08.741 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:08.741 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:08.741 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:08.742 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:08.743 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-27 19:55:08.765 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:08.766 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-27 19:55:08.766 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-27 19:55:08.766 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:08.767 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-27 19:55:08.770 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-27 19:55:08.771 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:08.773 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-27 19:55:08.773 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 6
+2022-08-27 19:55:08.773 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-27 19:55:08.774 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-27 19:55:08.774 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-27 19:55:08.775 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-27 19:55:08.775 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 300, 301, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-27 19:55:08.776 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原, 300, 302, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-27 19:55:08.776 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2380886544879616, 概率论与梳理统计, 200, 202, 浙江大学出版社, /image/OIP2.jpg, 473, null, null
+2022-08-27 19:55:08.776 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:08.778 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:08.778 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-27 19:55:08.778 INFO  com.fanfanfan.wiki.service.EbookService           :41   [32m                  [0;39m 总行数：6
+2022-08-27 19:55:08.779 INFO  com.fanfanfan.wiki.service.EbookService           :42   [32m                  [0;39m 总页数：2
+2022-08-27 19:55:08.783 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":300,"category2Id":301,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"category1Id":300,"category2Id":302,"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原"},{"category1Id":200,"category2Id":202,"cover":"/image/OIP2.jpg","description":"浙江大学出版社","docCount":473,"id":2380886544879616,"name":"概率论与梳理统计"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"}],"total":6},"success":true}
+2022-08-27 19:55:08.784 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2022-08-27 19:55:09.665 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:09.666 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:09.666 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:09.666 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:09.667 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:09.667 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:09.668 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:09.669 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:09.669 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:09.670 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:09.670 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:09.670 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:09.671 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:09.671 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:09.671 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:09.671 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:09.672 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:09.672 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:09.672 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:09.673 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:09.673 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:09.673 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:09.673 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:09.674 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:09.674 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:09.674 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:09.675 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:09.676 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-27 19:55:11.439 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:11.440 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:11.440 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:11.440 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:11.441 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:11.441 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:11.442 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:11.443 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:11.444 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:11.445 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:11.445 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:11.446 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:11.446 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:11.447 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:11.447 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:11.448 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:11.448 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:11.448 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:11.449 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:11.449 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:11.449 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:11.449 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:11.450 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:11.450 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:11.450 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:11.450 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:11.451 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:11.451 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-27 19:55:12.781 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:12.781 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:12.781 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:12.781 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:12.782 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:12.783 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:12.783 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:12.784 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:12.785 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:12.785 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:12.785 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:12.786 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:12.786 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:12.787 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:12.787 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:12.787 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:12.787 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:12.788 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:12.788 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:12.788 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:12.789 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:12.789 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:12.789 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:12.789 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:12.790 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:12.790 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:12.791 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:12.791 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-27 19:55:13.544 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:13.544 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:13.545 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:13.545 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:13.546 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:13.547 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:13.547 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:13.549 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:13.549 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:13.550 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:13.550 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:13.550 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:13.550 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:13.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:13.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:13.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:13.551 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:13.552 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:13.552 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:13.552 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:13.552 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:13.553 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:13.553 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:13.553 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:13.554 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:13.554 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:13.555 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:13.555 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-27 19:55:13.579 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:13.579 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-27 19:55:13.579 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-27 19:55:13.579 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:13.580 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-27 19:55:13.582 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-27 19:55:13.583 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:13.584 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-27 19:55:13.585 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 6
+2022-08-27 19:55:13.585 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-27 19:55:13.586 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-27 19:55:13.587 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-27 19:55:13.587 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-27 19:55:13.588 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 300, 301, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-27 19:55:13.588 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原, 300, 302, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-27 19:55:13.589 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2380886544879616, 概率论与梳理统计, 200, 202, 浙江大学出版社, /image/OIP2.jpg, 473, null, null
+2022-08-27 19:55:13.589 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:13.589 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:13.589 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-27 19:55:13.590 INFO  com.fanfanfan.wiki.service.EbookService           :41   [32m                  [0;39m 总行数：6
+2022-08-27 19:55:13.590 INFO  com.fanfanfan.wiki.service.EbookService           :42   [32m                  [0;39m 总页数：2
+2022-08-27 19:55:13.591 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":300,"category2Id":301,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"category1Id":300,"category2Id":302,"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原"},{"category1Id":200,"category2Id":202,"cover":"/image/OIP2.jpg","description":"浙江大学出版社","docCount":473,"id":2380886544879616,"name":"概率论与梳理统计"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"}],"total":6},"success":true}
+2022-08-27 19:55:13.591 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2022-08-27 19:55:14.029 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:14.029 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:14.030 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:14.030 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:14.030 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:14.031 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:14.031 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:14.032 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:14.033 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:14.033 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:14.034 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:14.034 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:14.034 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:14.034 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:14.035 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:14.035 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:14.035 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:14.035 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:14.036 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:14.036 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:14.036 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:14.036 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:14.037 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:14.037 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:14.037 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:14.038 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:14.039 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:14.039 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-27 19:55:20.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:20.843 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:20.844 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:20.844 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:20.844 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:20.845 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:20.846 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:20.847 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:20.848 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:20.848 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:20.848 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:20.849 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:20.849 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:20.849 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:20.849 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:20.850 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:20.850 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:20.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:20.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:20.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:20.851 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:20.852 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:20.852 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:20.852 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:20.853 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:20.853 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:20.853 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:20.853 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-27 19:55:20.890 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:20.891 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/ebook/list GET
+2022-08-27 19:55:20.891 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.EbookController.list
+2022-08-27 19:55:20.891 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:20.891 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [{"page":1,"size":5}]
+2022-08-27 19:55:20.893 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-08-27 19:55:20.893 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:20.895 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2022-08-27 19:55:20.895 TRACE c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 6
+2022-08-27 19:55:20.896 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2022-08-27 19:55:20.897 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-08-27 19:55:20.898 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 5(Integer)
+2022-08-27 19:55:20.900 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-08-27 19:55:20.901 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1123441751232512, C陷阱, 300, 301, C和C++经典著作, /image/OIP-C.jpg, 657588775, null, null
+2022-08-27 19:55:20.902 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 1171606068137984, 自动控制原, 300, 302, 题海与考研指导, /image/OIP-C.jpg, 43536, null, null
+2022-08-27 19:55:20.903 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 2380886544879616, 概率论与梳理统计, 200, 202, 浙江大学出版社, /image/OIP2.jpg, 473, null, null
+2022-08-27 19:55:20.904 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 48429800259457024, 雪花算法, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:20.904 TRACE c.f.wiki.mapper.EbookMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 215449148927905792, on JAVA中文版, null, null, null, /image/cover2.png, null, null, null
+2022-08-27 19:55:20.905 DEBUG c.f.wiki.mapper.EbookMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 5
+2022-08-27 19:55:20.905 INFO  com.fanfanfan.wiki.service.EbookService           :41   [32m                  [0;39m 总行数：6
+2022-08-27 19:55:20.905 INFO  com.fanfanfan.wiki.service.EbookService           :42   [32m                  [0;39m 总页数：2
+2022-08-27 19:55:20.906 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":300,"category2Id":301,"cover":"/image/OIP-C.jpg","description":"C和C++经典著作","docCount":657588775,"id":1123441751232512,"name":"C陷阱"},{"category1Id":300,"category2Id":302,"cover":"/image/OIP-C.jpg","description":"题海与考研指导","docCount":43536,"id":1171606068137984,"name":"自动控制原"},{"category1Id":200,"category2Id":202,"cover":"/image/OIP2.jpg","description":"浙江大学出版社","docCount":473,"id":2380886544879616,"name":"概率论与梳理统计"},{"cover":"/image/cover2.png","id":48429800259457024,"name":"雪花算法"},{"cover":"/image/cover2.png","id":215449148927905792,"name":"on JAVA中文版"}],"total":6},"success":true}
+2022-08-27 19:55:20.907 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：17 ms -------------
+2022-08-27 19:55:22.910 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:22.911 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/doc/all/1123441751232512 GET
+2022-08-27 19:55:22.911 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.DocController.all
+2022-08-27 19:55:22.912 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:22.912 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: [1123441751232512]
+2022-08-27 19:55:22.914 DEBUG c.fanfanfan.wiki.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2022-08-27 19:55:22.914 DEBUG c.fanfanfan.wiki.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 1123441751232512(Long)
+2022-08-27 19:55:22.915 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2022-08-27 19:55:22.916 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4, 1123441751232512, 3, 文档2.1, 1, 0, 0
+2022-08-27 19:55:22.916 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6, 1123441751232512, 5, 文档2.2.1, 1, 0, 0
+2022-08-27 19:55:22.917 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4057174703738880, 1123441751232512, 5, test, 1, 0, 0
+2022-08-27 19:55:22.917 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 3, 1123441751232512, 0, 文档2, 2, 0, 0
+2022-08-27 19:55:22.917 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 5, 1123441751232512, 3, 文档2.2, 2, 0, 0
+2022-08-27 19:55:22.918 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4059358178709504, 1123441751232512, 5, 文档4, 4, 0, 0
+2022-08-27 19:55:22.918 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4101869337186304, 1123441751232512, 4, 6, 4, 0, 0
+2022-08-27 19:55:22.919 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4100860716126208, 1123441751232512, 4057174703738880, 测试5, 6, 0, 0
+2022-08-27 19:55:22.919 TRACE c.fanfanfan.wiki.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 4100151052472320, 1123441751232512, 6, 测试4, 7, 0, 0
+2022-08-27 19:55:22.919 DEBUG c.fanfanfan.wiki.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 9
+2022-08-27 19:55:22.921 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1123441751232512,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":4057174703738880,"name":"test","parent":5,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":4059358178709504,"name":"文档4","parent":5,"sort":4,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":4101869337186304,"name":"6","parent":4,"sort":4,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":4100860716126208,"name":"测试5","parent":4057174703738880,"sort":6,"viewCount":0,"voteCount":0},{"ebookId":1123441751232512,"id":4100151052472320,"name":"测试4","parent":6,"sort":7,"viewCount":0,"voteCount":0}],"success":true}
+2022-08-27 19:55:22.921 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-27 19:55:26.341 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:26.341 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:26.341 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:26.342 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:26.342 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:26.343 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:26.343 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:26.344 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:26.344 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:26.345 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:26.345 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:26.345 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:26.346 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:26.346 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:26.346 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:26.347 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:26.347 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:26.347 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:26.347 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:26.348 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:26.348 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:26.349 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:26.349 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:26.350 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:26.350 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:26.350 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:26.352 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:26.352 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2022-08-27 19:55:26.957 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:26.957 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:26.957 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:26.957 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:26.958 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:26.958 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:26.959 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:26.960 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:26.960 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:26.960 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:26.961 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:26.961 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:26.961 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:26.962 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:26.962 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:26.962 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:26.962 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:26.963 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:26.963 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:26.963 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:26.963 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:26.964 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:26.964 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:26.964 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:26.965 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:26.965 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:26.967 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:26.967 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2022-08-27 19:55:29.297 INFO  com.fanfanfan.wiki.aspect.LogAspect               :53   [32m                  [0;39m ------------- 开始 -------------
+2022-08-27 19:55:29.298 INFO  com.fanfanfan.wiki.aspect.LogAspect               :54   [32m                  [0;39m 请求地址: http://127.0.0.1:8097/category/all GET
+2022-08-27 19:55:29.298 INFO  com.fanfanfan.wiki.aspect.LogAspect               :55   [32m                  [0;39m 类名方法: com.fanfanfan.wiki.controller.CategoryController.all
+2022-08-27 19:55:29.299 INFO  com.fanfanfan.wiki.aspect.LogAspect               :56   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-08-27 19:55:29.299 INFO  com.fanfanfan.wiki.aspect.LogAspect               :78   [32m                  [0;39m 请求参数: []
+2022-08-27 19:55:29.300 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-08-27 19:55:29.301 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 
+2022-08-27 19:55:29.302 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-08-27 19:55:29.303 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1475711651155968, 400, test3, 3
+2022-08-27 19:55:29.303 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-08-27 19:55:29.304 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-08-27 19:55:29.304 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 102, 100, HTML&CSS, 102
+2022-08-27 19:55:29.304 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 200, 0, java, 200
+2022-08-27 19:55:29.305 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-08-27 19:55:29.305 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-08-27 19:55:29.305 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-08-27 19:55:29.305 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-08-27 19:55:29.306 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-08-27 19:55:29.306 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-08-27 19:55:29.306 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 401, 0, Mysql, 401
+2022-08-27 19:55:29.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 402, 0, 其他, 402
+2022-08-27 19:55:29.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2022-08-27 19:55:29.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-08-27 19:55:29.307 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-08-27 19:55:29.308 TRACE c.f.wiki.mapper.CategoryMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2022-08-27 19:55:29.308 DEBUG c.f.wiki.mapper.CategoryMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 17
+2022-08-27 19:55:29.309 INFO  com.fanfanfan.wiki.aspect.LogAspect               :90   [32m                  [0;39m 返回结果: {"content":[{"id":1475711651155968,"name":"test3","parent":400,"sort":3},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML&CSS","parent":100,"sort":102},{"id":200,"name":"java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"Mysql","parent":0,"sort":401},{"id":402,"name":"其他","parent":0,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2022-08-27 19:55:29.309 INFO  com.fanfanfan.wiki.aspect.LogAspect               :91   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2022-08-27 20:07:24.093 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-08-27 20:07:24.101 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-08-27 20:07:24.316 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 4784 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-27 20:07:24.316 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-27 20:07:24.671 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-27 20:07:24.672 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-27 20:07:24.672 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-27 20:07:24.672 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-27 20:07:24.701 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-27 20:07:24.701 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 382 ms
+2022-08-27 20:07:25.265 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-27 20:07:25.277 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-27 20:07:25.280 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-27 20:07:25.288 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 1.005 seconds (JVM running for 26907.535)
+2022-08-27 20:07:25.290 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-27 20:07:25.291 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-27 20:07:25.291 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097
+2022-08-27 20:07:30.175 INFO  com.fanfanfan.wiki.config.WikiApplication         :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_202 on LAPTOP-EG20H0ET with PID 4784 (D:\Portfolio\wiki\target\classes started by admin in D:\Portfolio\wiki)
+2022-08-27 20:07:30.176 INFO  com.fanfanfan.wiki.config.WikiApplication         :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-08-27 20:07:30.517 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8097 (http)
+2022-08-27 20:07:30.518 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8097"]
+2022-08-27 20:07:30.518 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-08-27 20:07:30.518 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-27 20:07:30.545 INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-08-27 20:07:30.545 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 367 ms
+2022-08-27 20:07:31.182 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-08-27 20:07:31.194 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8097"]
+2022-08-27 20:07:31.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8097 (http) with context path ''
+2022-08-27 20:07:31.206 INFO  com.fanfanfan.wiki.config.WikiApplication         :61   [32m                  [0;39m Started WikiApplication in 1.069 seconds (JVM running for 26913.453)
+2022-08-27 20:07:31.208 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-08-27 20:07:31.209 INFO  com.fanfanfan.wiki.config.WikiApplication         :21   [32m                  [0;39m 启动成功!!!
+2022-08-27 20:07:31.209 INFO  com.fanfanfan.wiki.config.WikiApplication         :22   [32m                  [0;39m 地址：	http://127.0.0.1:8097

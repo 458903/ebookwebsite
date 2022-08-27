@@ -42,7 +42,7 @@
 
 
 
-        <!--<table tableName="user"/>-->
+        <table tableName="user"/>
         <!---->
     </context>
 </generatorConfiguration>
