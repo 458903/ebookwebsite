@@ -1,4 +1,4 @@
-/*
+
 package com.fanfanfan.wiki.interceptor;
 
 import com.alibaba.fastjson.JSON;
@@ -15,11 +15,12 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Type;
 
-*/
+
 /**
  * 拦截器：Spring框架特有的，常用于登录校验，权限校验，请求日志打印
- *//*
+ */
 
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
@@ -60,7 +61,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             return false;
         } else {
             LOG.info("已登录：{}", object);
-            LoginUserContext.setUser(JSON.parseObject((String) object, UserLoginResp.class));
+            LoginUserContext.setUser(JSON.parseObject((String) object, (Type) UserLoginResp.class));
             return true;
         }
     }
@@ -73,7 +74,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-//        LOG.info("LogInterceptor 结束");
+        LOG.info("LogInterceptor 结束");
     }
 }
-*/
+
