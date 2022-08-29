@@ -13,6 +13,8 @@ import com.fanfanfan.wiki.service.UserService;
 import com.fanfanfan.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
@@ -32,9 +34,13 @@ public class UserController {
 
     @Resource
     private SnowFlake snowFlake;
-
-   /* @Resource
+/*
+    @Resource
+ @  Qualifier("redisTemplate")
     private RedisTemplate redisTemplate;*/
+@Resource
+private RedisTemplate redisTemplate;
+
 
     @GetMapping("/list")
     public CommonResp list(@Valid UserQueryReq req) {
@@ -76,7 +82,7 @@ public class UserController {
         Long token = snowFlake.nextId();
         LOG.info("生成单点登录token：{}，并放入redis中", token);
         userLoginResp.setToken(token.toString());
-        //redisTemplate.opsForValue().set(token.toString(), JSONObject.toJSONString(userLoginResp), 3600 * 24, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(token.toString(), JSONObject.toJSONString(userLoginResp), 3600 * 24, TimeUnit.SECONDS);
 
         resp.setContent(userLoginResp);
         return resp;
@@ -85,7 +91,7 @@ public class UserController {
     @GetMapping("/logout/{token}")
     public CommonResp logout(@PathVariable String token) {
         CommonResp resp = new CommonResp<>();
-      //  redisTemplate.delete(token);
+        redisTemplate.delete(token);
         LOG.info("从redis中删除token: {}", token);
         return resp;
     }

@@ -1,6 +1,4 @@
 package com.fanfanfan.wiki.config;
-
-//import com.fanfanfan.wiki.interceptor.ActionInterceptor;
 import com.fanfanfan.wiki.interceptor.LogInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -14,9 +12,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     @Resource
     LogInterceptor loginInterceptor;
 
- /*   @Resource
-    ActionInterceptor actionInterceptor;
-*/
+
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor)
                 .addPathPatterns("/**")

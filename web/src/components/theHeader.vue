@@ -1,6 +1,9 @@
 <template>
     <a-layout-header class="header">
-        <div class="login-menu"  @click="showLoginModal">
+        <div class="login-menu" v-show="!user.id" @click="showLoginModal">
+            <span>您好：{{user.name}}</span>
+        </div>
+        <div class="login-menu"  v-show="user.id">
             <span>登录</span>
         </div>
         <a-menu
@@ -55,7 +58,9 @@
         name: 'theHeader',
         setup () {
             // 登录后保存
-       //     const user = computed(() => store.state.user);
+            const user=ref();
+            user.value={};
+     //   user = computed(() => store.state.user);
 
             // 用来登录
             const loginUser = ref({
@@ -107,7 +112,7 @@
                 showLoginModal,
                 loginUser,
                 login,
-              //  user,
+               user,
               //  logout
             }
         }
