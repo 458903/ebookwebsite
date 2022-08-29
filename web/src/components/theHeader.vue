@@ -58,9 +58,8 @@
         name: 'theHeader',
         setup () {
             // 登录后保存
-            const user=ref();
-            user.value={};
-     //   user = computed(() => store.state.user);
+
+            const user = computed(() => store.state.user);
 
             // 用来登录
             const loginUser = ref({
@@ -84,7 +83,6 @@
                     if (data.success) {
                         loginModalVisible.value = false;
                         message.success("登录成功！");
-
                         store.commit("setUser", data.content);
                     } else {
                         message.error(data.message);
@@ -93,7 +91,7 @@
             };
 
             // 退出登录
-   /*     const logout = () => {
+       const logout = () => {
                 console.log("退出登录开始");
                 axios.get('/user/logout/' + user.value.token).then((response) => {
                     const data = response.data;
@@ -104,7 +102,7 @@
                         message.error(data.message);
                     }
                 });
-            };*/
+            };
 
             return {
                 loginModalVisible,
@@ -113,7 +111,7 @@
                 loginUser,
                 login,
                user,
-              //  logout
+          logout
             }
         }
     });

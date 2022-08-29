@@ -1,28 +1,3 @@
-
-import { createStore } from 'vuex'
-/*declare let SessionStorage: any;
-const USER = "USER";
-const store = createStore;*/
-export default createStore({
-  state: {
-  //  user: SessionStorage.get(USER) || {}
-  },
-  getters: {
-  },
-  mutations: {
-   /* setUser (state, user) {
-      console.log("store user：", user);
-      state.user = user;
-      SessionStorage.set(USER, user);
-    }*/
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
-/*
-
 import { createStore } from 'vuex'
 
 declare let SessionStorage: any;
@@ -30,7 +5,7 @@ const USER = "USER";
 
 const store = createStore({
   state: {
-    user: SessionStorage.get(USER) || {}
+    user: SessionStorage.get(USER)|| {}
   },
   mutations: {
     setUser (state, user) {
@@ -46,4 +21,4 @@ const store = createStore({
 });
 
 export default store;
-*/
+
