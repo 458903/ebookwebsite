@@ -1,6 +1,6 @@
 package com.fanfanfan.wiki.controller;
 
-//import com.fanfanfan.wiki.exception.BusinessException;
+import com.fanfanfan.wiki.exception.BusinessException;
 import com.fanfanfan.wiki.resp.CommonResp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,11 +33,11 @@ public class ControllerExceptionHandler {
     }
 
     /**
-     * 校验异常统一处理
+     * 业务异常统一处理
      * @param e
      * @return
      */
-/*    @ExceptionHandler(value = BusinessException.class)
+    @ExceptionHandler(value = BusinessException.class)
     @ResponseBody
     public CommonResp validExceptionHandler(BusinessException e) {
         CommonResp commonResp = new CommonResp();
@@ -45,10 +45,10 @@ public class ControllerExceptionHandler {
         commonResp.setSuccess(false);
         commonResp.setMessage(e.getCode().getDesc());
         return commonResp;
-    }*/
+    }
 
     /**
-     * 校验异常统一处理
+     * 普通系统异常统一处理
      * @param e
      * @return
      */

@@ -29,7 +29,8 @@
         :loading="loading"
         @change="handleTableChange"
       >
-        <template v-slot:action="{ text, record }">
+        <template #bodyCell="{ column, record }">
+          <template v-if="column.key === 'action'">
           <a-space size="small">
             <a-button type="primary" @click="resetPassword(record)">
               重置密码
@@ -48,6 +49,7 @@
               </a-button>
             </a-popconfirm>
           </a-space>
+        </template>
         </template>
       </a-table>
     </a-layout-content>
@@ -91,10 +93,8 @@
   import axios from 'axios';
   import { message } from 'ant-design-vue';
   import {Tool} from "@/util/tool";
-
   declare let hexMd5: any;
   declare let KEY: any;
-
   export default defineComponent({
     name: 'AdminUser',
     setup() {
@@ -111,20 +111,23 @@
       const columns = [
         {
           title: '登陆名',
-          dataIndex: 'loginName'
+          dataIndex: 'loginName',
+          key: 'loginName'
         },
         {
           title: '名称',
-          dataIndex: 'name'
+          dataIndex: 'name',
+          key:'name'
         },
         {
           title: '密码',
-          dataIndex: 'password'
+          dataIndex: 'password',
+          key: 'password'
         },
         {
           title: 'Action',
           key: 'action',
-          slots: { customRender: 'action' }
+          dataIndex: 'action'
         }
       ];
 
@@ -173,7 +176,6 @@
       const modalLoading = ref(false);
       const handleModalOk = () => {
         modalLoading.value = true;
-
         user.value.password = hexMd5(user.value.password + KEY);
 
         axios.post("/user/save", user.value).then((response) => {
